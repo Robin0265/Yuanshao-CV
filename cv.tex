@@ -1,0 +1,320 @@
+%-----------------------------------------------------------------------------------------------------------------------------------------------%
+%	The MIT License (MIT)
+%
+%	Copyright (c) 2021 Jitin Nair
+%
+%	Permission is hereby granted, free of charge, to any person obtaining a copy
+%	of this software and associated documentation files (the "Software"), to deal
+%	in the Software without restriction, including without limitation the rights
+%	to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+%	copies of the Software, and to permit persons to whom the Software is
+%	furnished to do so, subject to the following conditions:
+%	
+%	THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+%	IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+%	FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+%	AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+%	LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+%	OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN
+%	THE SOFTWARE.
+%	
+%
+%-----------------------------------------------------------------------------------------------------------------------------------------------%
+
+%----------------------------------------------------------------------------------------
+%	DOCUMENT DEFINITION
+%----------------------------------------------------------------------------------------
+
+% article class because we want to fully customize the page and not use a cv template
+\documentclass[letter,12pt]{article}
+\usepackage{moresize}
+\usepackage{blindtext}
+%----------------------------------------------------------------------------------------
+%	FONT
+%----------------------------------------------------------------------------------------
+
+% % fontspec allows you to use TTF/OTF fonts directly
+% \usepackage{fontspec}
+% \defaultfontfeatures{Ligatures=TeX}
+
+% % modified for ShareLaTeX use
+% \setmainfont[
+% SmallCapsFont = Fontin-SmallCaps.otf,
+% BoldFont = Fontin-Bold.otf,
+% ItalicFont = Fontin-Italic.otf
+% ]
+% {Fontin.otf}
+
+%----------------------------------------------------------------------------------------
+%	PACKAGES
+%----------------------------------------------------------------------------------------
+\usepackage{url}
+\usepackage{parskip}
+\usepackage{comment}
+
+%other packages for formatting
+\RequirePackage{color}
+\RequirePackage{graphicx}
+\usepackage[usenames,dvipsnames]{xcolor}
+\usepackage[scale=0.9]{geometry}
+
+%tabularx environment
+\usepackage{tabularx}
+%for lists within experience section
+\usepackage{enumitem}
+
+% centered version of 'X' col. type
+\newcolumntype{C}{>{\centering\arraybackslash}X} 
+
+%to prevent spillover of tabular into next pages
+\usepackage{supertabular}
+\usepackage{tabularx}
+\newlength{\fullcollw}
+\setlength{\fullcollw}{0.47\textwidth}
+
+%custom \section
+\usepackage{titlesec}				
+\usepackage{multicol}
+\usepackage{multirow}
+
+%CV Sections inspired by: 
+%http://stefano.italians.nl/archives/26
+\titleformat{\section}{\Large\scshape\raggedright}{}{0em}{}[\titlerule]
+\titlespacing{\section}{0pt}{10pt}{10pt}
+
+%for publications
+\usepackage[style=authoryear,sorting=ynt, maxbibnames=2]{biblatex}
+
+%Setup hyperref package, and colours for links
+\usepackage[unicode, draft=false]{hyperref}
+\definecolor{linkcolour}{rgb}{0,0.2,0.6}
+\hypersetup{colorlinks,breaklinks,urlcolor=linkcolour,linkcolor=linkcolour}
+% \addbibresource{citations.bib}
+\setlength\bibitemsep{1em}
+
+%for social icons
+\usepackage{fontawesome5}
+
+%debug page outer frames
+%\usepackage{showframe}
+
+%----------------------------------------------------------------------------------------
+%	BEGIN DOCUMENT
+%----------------------------------------------------------------------------------------
+\begin{document}
+% non-numbered pages
+\pagestyle{empty} 
+
+%----------------------------------------------------------------------------------------
+%	TITLE
+%----------------------------------------------------------------------------------------
+
+% \begin{tabularx}{\linewidth}{ @{}X X@{} }
+% \huge{Your Name}\vspace{2pt} & \hfill \emoji{incoming-envelope} email@email.com \\
+% \raisebox{-0.05\height}\faGithub\ username \ | \
+% \raisebox{-0.00\height}\faLinkedin\ username \ | \ \raisebox{-0.05\height}\faGlobe \ mysite.com  & \hfill \emoji{calling} number
+% \end{tabularx}
+
+
+
+\begin{tabularx}{\linewidth}{@{} C @{}}
+\Huge{Yuanshao Yang} \\[7.5pt]
+% \href{https://github.com/Robin0265}{\raisebox{-0.05\height}\faGithub\ Yuanshao Yang} \ $|$ \ 
+\href{mailto:yuanshao@umich.edu}{\raisebox{-0.05\height}\faEnvelope \ yuanshao@umich.edu} \ $|$ \ 
+\href{tel:+17348828073}{\raisebox{-0.05\height}\faMobile \ +1 (734) 882-8073} \\
+\end{tabularx}
+\center{\footnotesize Last updated: \today}
+
+
+\section{Education}
+\begin{tabularx}{\linewidth}{@{}l X@{}}	
+\textit{\textbf{Aug. 2023 - Present}} & {} \hfill {\small{\textbf{University of Michigan - Ann Arbor}}}\\
+College of Engineering \\
+Mechanical Engineering BSE / Robotics & \hfill GPA: 4.00/4.00\\
+
+\textit{\textbf{Sep. 2021 - July 2023}} & {} \hfill \small{\textbf{Sichuan University, Chengdu}}\\ 
+Sichuan University - Pittsburgh Institute & {} \hfill {}\\ 
+Bachelor of Engineering in Mechanical Engineering & {} \hfill GPA: 3.84/4.00\\
+\end{tabularx}
+
+% %Experience
+% \section{Work Experience}
+
+% \begin{tabularx}{\linewidth}{ @{}l r@{} }
+% \textbf{Designation} & \hfill Jan 2021 - present \\[3.75pt]
+% \multicolumn{2}{@{}X@{}}{long long line of blah blah that will wrap when the table fills the column width long long line of blah blah that will wrap when the table fills the column width long long line of blah blah that will wrap when the table fills the column width long long line of blah blah that will wrap when the table fills the column width}  \\
+% \end{tabularx}
+
+% \begin{tabularx}{\linewidth}{ @{}l r@{} }
+% \textbf{Designation} & \hfill Mar 2019 - Jan 2021 \\[3.75pt]
+% \multicolumn{2}{@{}X@{}}{
+% \begin{minipage}[t]{\linewidth}
+%     \begin{itemize}[nosep,after=\strut, leftmargin=1em, itemsep=3pt]
+%         \item[--] long long line of blah blah that will wrap when the table fills the column width
+%         \item[--] again, long long line of blah blah that will wrap when the table fills the column width but this time even more long long line of blah blah. again, long long line of blah blah that will wrap when the table fills the column width but this time even more long long line of blah blah
+%     \end{itemize}
+%     \end{minipage}
+% }
+% \end{tabularx}
+
+\section{Research Interests}
+
+\begin{itemize}
+    \item{Robot Locomotion}
+\end{itemize}
+
+\section{Honors \& Awards}
+Dec 2023 / May 2024, University of Michigan\hfill University Honors\\
+Dec 2023 / June 2024, University of Michigan - College of Engineering\hfill Dean's List\\
+Oct 2023, Sichuan University\hfill Dean's List (10 \% Annual Tuition, 30/230)\\
+Oct 2022, Sichuan University\hfill Academic Star Scholarship (20 \% Annual Tuition, 3/230)\\
+Oct 2022, Sichuan University\hfill Comprehensive Academic Scholarship, 2nd Prize (TOP 4 \%)\\
+Oct 2022, Sichuan University\hfill Outstanding Student Leader of the Year\\
+
+
+
+%Projects
+\section{Projects}
+
+\begin{tabularx}{\linewidth}{@{}l X@{}}
+\large \textbf{Research Intern of Project \href{https://www.opensourceleg.org/about}{Open-Source Leg}} & \hfill Mar. 2024 - Present \\
+\small{\textbf{Instructor: Prof. Elliott J. Rouse, Senthur Ayyappan}} & \hfill {} \\
+\small{\href{https://neurobionics.robotics.umich.edu/}{Neurobionics Lab}, Robotics, University of Michigan} & \hfill {} \\
+\small{\href{https://github.com/neurobionics/opensourceleg}{GitHub Repository Posted}} & \hfill {} \\
+\end{tabularx}
+
+\begin{itemize}[
+    rightmargin=2cm
+]
+    \setlength{\itemsep}{1pt}
+    \setlength{\parskip}{0pt}
+    \setlength{\parsep}{0pt}
+    \item{\small Literature reviews on the structure of bionic legs and 3-Phase Brushless DC Motors}
+    \item{\small Design new connectors between the new controller board and the original actuator}
+    \item{\small Redesign the Python Library for compatibility with multiple actuators}
+    \item{\small Test actuator functions based on new designs of the control systems}
+    \item{\small Report to Prof. Rouse and Senthur with new findings \& ideas}
+\end{itemize}
+
+\begin{tabularx}{\linewidth}{@{}l X@{}}
+\large \textbf{Development \& Motion Analysis of Robot Swimmer} & \hfill Dec. 2023 - Present \\
+\small{\textbf{Instructor: Prof. Alex K. Shorter}} & \hfill {} \\
+\small{Mechanical Engineering, University of Michigan} & \hfill {} \\
+\small{\href{https://github.com/Robin0265/PathPlanning_Code}{GitHub Repository Posted}} & \hfill {} \\
+\end{tabularx}
+
+\begin{itemize}[
+    rightmargin=2cm
+]
+    \setlength{\itemsep}{1pt}
+    \setlength{\parskip}{0pt}
+    \setlength{\parsep}{0pt}
+    \item{\small Develop an E. coli-based robot swimmer model with a sphere head and quad flagella}
+    \item{\small Design \& optimize the CAD model for robots’ smooth 2-D motion in uniform, viscous flow}
+    \item{\small Validate the mechanical design by CFD analysis}
+    \item{\small Use correlation analysis towards design parameters to optimize mechanical design}
+    \item{\small Develop a path-planning algorithm for obstacle avoidance}
+    \item{\small Design the feedback control model to perform reference tracking}
+    
+\end{itemize}
+
+\begin{tabularx}{\linewidth}{@{}l X@{}}
+\large \textbf{An Automated Vehicle with Tracking System} & \hfill Mar. 2023 - Aug. 2023 \\
+\small \textbf{Instructor: Prof. Qi Lu} & \hfill {} \\
+\small{{Sichuan University - Pittsburgh Institute}} & \hfill {} \\
+\small{\href{https://github.com/Robin0265/StablerCTRL}{GitHub Repository Posted}} & \hfill {} \\
+\end{tabularx}
+
+\begin{itemize}[
+    rightmargin=2cm
+]
+    \setlength{\itemsep}{1pt}
+    \setlength{\parskip}{0pt}
+    \setlength{\parsep}{0pt}
+    \item{\small Development of a self-tracking vehicle with tennis-ball-recognition}
+    \item{\small Focusing on image recognition algorithm and object tracking method in the Tracking System}
+    \item{\small Training and testing the image recognition model (YOLO v3) on the camera module for better effects of tennis ball recognition}
+    \item{\small Implementation of a PID controller for the servos in the stabilizer to achieve object tracking}
+    \item{\small Implementing and testing the functionality of the tracking system on STM32 Microcontroller Platform}
+\end{itemize}
+
+\begin{tabularx}{\linewidth}{@{}l X@{}}
+\large \textbf{Research Intern of Prof. Xiaobo Zhou} & \hfill {Mar. 2022 - June 2023} \\
+\small{West China Hospital Biomedical Big Data Center, Sichuan University} & \hfill {} \\
+\small{\href{https://github.com/Robin0265/HeartDisease_Regression}{GitHub Repository Posted}} & \hfill {} \\
+\end{tabularx}
+
+\begin{itemize}[
+    rightmargin=2cm
+]
+    \setlength{\itemsep}{1pt}
+    \setlength{\parskip}{0pt}
+    \setlength{\parsep}{0pt}
+    \item{\small Work on diagnostic data of cardiac patients through feature selection}
+    \item{\small Develop regression models (e.g., Random Forest) via Scikit-Learn and PyTorch in Python and use training data sets of clinical diagnostic data}
+    \item{\small Test model performance on internal test datasets}
+    \item{\small Perform interpretability analysis of built models using variable sensitivity analysis}
+    \item{\small Enhance classification processes' precision of the model by analyzing visualized Decision Trees}
+    \item{\small Respond to Prof. Zhou with experimental findings for diagnosing heart disease}
+\end{itemize}
+
+
+\section{Extra-Curriculum Activities}
+
+\begin{tabularx}{\linewidth}{@{}l X@{}}
+\large \textbf{M.S.D.M (Math, Science, Data, and Modelling) Club} & \hfill {June 2022 - Present} \\
+\normalsize{Co-Founder} & \hfill \small{Sichuan University} \\
+\end{tabularx}
+
+\begin{itemize}[
+    rightmargin=2cm
+]
+    \setlength{\itemsep}{1pt}
+    \setlength{\parskip}{0pt}
+    \setlength{\parsep}{0pt}
+    \item{\small Establish an academic club aiming to integrate and share math-related resources}
+    \item{\small Organize online seminars twice a month, attracted 10 people}
+    \item{\small Invite professors to give pre-competition guidance to students planning to compete in MCM/ICM}
+    \item{\small Manage member recruiting, seminar content planning}
+\end{itemize}
+
+\section{Skills}
+\begin{itemize}[nosep,after=\strut, leftmargin=1em, itemsep=3pt]
+    \item{Programming}
+    \begin{itemize}
+        \item C/C++, Python (including PyTorch, Scikit Learn, etc) 
+    \end{itemize}
+    \item{Tools}
+    \begin{itemize}
+        \item Keil MDK, MATLAB \& Simulink Toolbox, LaTeX, SolidWorks, AutoCAD, MSC Adams 
+    \end{itemize}
+\end{itemize}
+
+
+%----------------------------------------------------------------------------------------
+%	PUBLICATIONS
+%----------------------------------------------------------------------------------------
+\begin{comment}
+
+\end{comment}
+
+
+\newpage
+
+\section{Research Portfolio}
+
+\section{Publications}
+
+\large \textbf{In Review} \hfill \\
+\begin{refsection}[inReview.bib]
+\nocite{*}
+\printbibliography[heading=none]
+\end{refsection}    
+
+\large \textbf{In Press} \hfill \\
+\begin{refsection}[inPress.bib]
+\nocite{*}
+\printbibliography[heading=none]
+\end{refsection}    
+
+\end{document}
