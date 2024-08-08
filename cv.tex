@@ -52,6 +52,9 @@
 \usepackage{parskip}
 \usepackage{comment}
 
+\usepackage{markdown}
+\markdownSetup{pipeTables,tableCaptions}
+
 %other packages for formatting
 \RequirePackage{color}
 \RequirePackage{graphicx}
@@ -119,20 +122,19 @@
 
 \begin{tabularx}{\linewidth}{@{} C @{}}
 \Huge{Yuanshao Yang} \\[7.5pt]
-% \href{https://github.com/Robin0265}{\raisebox{-0.05\height}\faGithub\ Yuanshao Yang} \ $|$ \ 
+\href{https://github.com/Robin0265}{\raisebox{-0.05\height}\faGithub\ Github \& Personal Website} \ $|$ \ 
 \href{mailto:yuanshao@umich.edu}{\raisebox{-0.05\height}\faEnvelope \ yuanshao@umich.edu} \ $|$ \ 
 \href{tel:+17348828073}{\raisebox{-0.05\height}\faMobile \ +1 (734) 882-8073} \\
 \end{tabularx}
 \center{\footnotesize Last updated: \today}
 
-
 \section{Education}
 \begin{tabularx}{\linewidth}{@{}l X@{}}	
-\textit{\textbf{Aug. 2023 - Present}} & {} \hfill {\small{\textbf{University of Michigan - Ann Arbor}}}\\
+\textit{\textbf{Aug 2023 - Present}} & {} \hfill {\small{\textbf{University of Michigan - Ann Arbor}}}\\
 College of Engineering \\
-Mechanical Engineering BSE / Robotics & \hfill GPA: 4.00/4.00\\
+Mechanical Engineering BSE / Concentration in Robotics & \hfill GPA: 4.00/4.00\\
 
-\textit{\textbf{Sep. 2021 - July 2023}} & {} \hfill \small{\textbf{Sichuan University, Chengdu}}\\ 
+\textit{\textbf{Sept 2021 - July 2023}} & {} \hfill \small{\textbf{Sichuan University, Chengdu}}\\ 
 Sichuan University - Pittsburgh Institute & {} \hfill {}\\ 
 Bachelor of Engineering in Mechanical Engineering & {} \hfill GPA: 3.84/4.00\\
 \end{tabularx}
@@ -157,11 +159,6 @@ Bachelor of Engineering in Mechanical Engineering & {} \hfill GPA: 3.84/4.00\\
 % }
 % \end{tabularx}
 
-\section{Research Interests}
-
-\begin{itemize}
-    \item{Robot Locomotion}
-\end{itemize}
 
 \section{Honors \& Awards}
 Dec 2023 / May 2024, University of Michigan\hfill University Honors\\
@@ -177,7 +174,24 @@ Oct 2022, Sichuan University\hfill Outstanding Student Leader of the Year\\
 \section{Projects}
 
 \begin{tabularx}{\linewidth}{@{}l X@{}}
-\large \textbf{Research Intern of Project \href{https://www.opensourceleg.org/about}{Open-Source Leg}} & \hfill Mar. 2024 - Present \\
+    \large \textbf{Series Spring Design \& Evaluation for \href{https://www.opensourceleg.org/about}{Open-Source Leg}} & \hfill July 2024 - Present \\
+    \small{\textbf{Instructor: Prof. Elliott J. Rouse, Zach Bons}} & \hfill {} \\
+    \small{\href{https://neurobionics.robotics.umich.edu/}{Neurobionics Lab}, Robotics, University of Michigan} & \hfill {} \\
+    \end{tabularx}
+    
+    \begin{itemize}[
+        rightmargin=2cm
+    ]
+        \setlength{\itemsep}{1pt}
+        \setlength{\parskip}{0pt}
+        \setlength{\parsep}{0pt}
+        \item{\small Literature review of torsional spring design}
+        \item{\small Middleware Design to link spring in series}
+        \item{\small Testing the performance of the series spring}
+    \end{itemize}
+
+\begin{tabularx}{\linewidth}{@{}l X@{}}
+\large \textbf{New Controller Implementation for \href{https://www.opensourceleg.org/about}{Open-Source Leg}} & \hfill Mar 2024 - Present \\
 \small{\textbf{Instructor: Prof. Elliott J. Rouse, Senthur Ayyappan}} & \hfill {} \\
 \small{\href{https://neurobionics.robotics.umich.edu/}{Neurobionics Lab}, Robotics, University of Michigan} & \hfill {} \\
 \small{\href{https://github.com/neurobionics/opensourceleg}{GitHub Repository Posted}} & \hfill {} \\
@@ -190,14 +204,14 @@ Oct 2022, Sichuan University\hfill Outstanding Student Leader of the Year\\
     \setlength{\parskip}{0pt}
     \setlength{\parsep}{0pt}
     \item{\small Literature reviews on the structure of bionic legs and 3-Phase Brushless DC Motors}
-    \item{\small Design new connectors between the new controller board and the original actuator}
     \item{\small Redesign the Python Library for compatibility with multiple actuators}
-    \item{\small Test actuator functions based on new designs of the control systems}
-    \item{\small Report to Prof. Rouse and Senthur with new findings \& ideas}
+    \item{\small Design baseplate for new controller board on the original actuator}
+    \item{\small Implementation of the new controller board to expand alternative choices of actuators}
+    \item{\small Test actuator functions based on new designs}
 \end{itemize}
 
 \begin{tabularx}{\linewidth}{@{}l X@{}}
-\large \textbf{Development \& Motion Analysis of Robot Swimmer} & \hfill Dec. 2023 - Present \\
+\large \textbf{Development \& Motion Analysis of Robot Swimmer} & \hfill Dec 2023 - Present \\
 \small{\textbf{Instructor: Prof. Alex K. Shorter}} & \hfill {} \\
 \small{Mechanical Engineering, University of Michigan} & \hfill {} \\
 \small{\href{https://github.com/Robin0265/PathPlanning_Code}{GitHub Repository Posted}} & \hfill {} \\
@@ -219,7 +233,7 @@ Oct 2022, Sichuan University\hfill Outstanding Student Leader of the Year\\
 \end{itemize}
 
 \begin{tabularx}{\linewidth}{@{}l X@{}}
-\large \textbf{An Automated Vehicle with Tracking System} & \hfill Mar. 2023 - Aug. 2023 \\
+\large \textbf{An Automated Vehicle with Tracking System} & \hfill Mar 2023 - Aug 2023 \\
 \small \textbf{Instructor: Prof. Qi Lu} & \hfill {} \\
 \small{{Sichuan University - Pittsburgh Institute}} & \hfill {} \\
 \small{\href{https://github.com/Robin0265/StablerCTRL}{GitHub Repository Posted}} & \hfill {} \\
@@ -235,11 +249,11 @@ Oct 2022, Sichuan University\hfill Outstanding Student Leader of the Year\\
     \item{\small Focusing on image recognition algorithm and object tracking method in the Tracking System}
     \item{\small Training and testing the image recognition model (YOLO v3) on the camera module for better effects of tennis ball recognition}
     \item{\small Implementation of a PID controller for the servos in the stabilizer to achieve object tracking}
-    \item{\small Implementing and testing the functionality of the tracking system on STM32 Microcontroller Platform}
+    \item{\small Implementing and testing the functionality of the tracking system}
 \end{itemize}
 
 \begin{tabularx}{\linewidth}{@{}l X@{}}
-\large \textbf{Research Intern of Prof. Xiaobo Zhou} & \hfill {Mar. 2022 - June 2023} \\
+\large \textbf{Research Intern of Prof. Xiaobo Zhou} & \hfill {Mar 2022 - June 2023} \\
 \small{West China Hospital Biomedical Big Data Center, Sichuan University} & \hfill {} \\
 \small{\href{https://github.com/Robin0265/HeartDisease_Regression}{GitHub Repository Posted}} & \hfill {} \\
 \end{tabularx}
@@ -255,7 +269,7 @@ Oct 2022, Sichuan University\hfill Outstanding Student Leader of the Year\\
     \item{\small Test model performance on internal test datasets}
     \item{\small Perform interpretability analysis of built models using variable sensitivity analysis}
     \item{\small Enhance classification processes' precision of the model by analyzing visualized Decision Trees}
-    \item{\small Respond to Prof. Zhou with experimental findings for diagnosing heart disease}
+    % \item{\small Respond to Prof. Zhou with experimental findings for diagnosing heart disease}
 \end{itemize}
 
 
@@ -282,7 +296,7 @@ Oct 2022, Sichuan University\hfill Outstanding Student Leader of the Year\\
 \begin{itemize}[nosep,after=\strut, leftmargin=1em, itemsep=3pt]
     \item{Programming}
     \begin{itemize}
-        \item C/C++, Python (including PyTorch, Scikit Learn, etc) 
+        \item C/C++, Python (PyTorch, Scikit-Learn, etc) 
     \end{itemize}
     \item{Tools}
     \begin{itemize}
@@ -301,20 +315,31 @@ Oct 2022, Sichuan University\hfill Outstanding Student Leader of the Year\\
 
 \newpage
 
-\section{Research Portfolio}
+
+\begin{tabularx}{\linewidth}{@{} C @{}}
+    \Huge{\textbf{Research Portfolio}} \\[7.5pt]
+    \end{tabularx}
+
+\section{Research Statement}
+
+% \begin{markdown}
+
+% \end{markdown}
+
+\begin{itemize}
+
+    \item {My primary research focuses on the the mechanical design \& control of prosthesis joints, for a better performance of prostheses developed}
+    \item {My ultimate research goal is to explore the dynamic behaviors of human limbs, and develop approaches (e.g. prosthesis) to aid various human motions} 
+    \item {These goals guides my steps towards more emphasis on human locomotion analysis, and wearable robotics design}
+
+\end{itemize}
 
 \section{Publications}
 
 \large \textbf{In Review} \hfill \\
 \begin{refsection}[inReview.bib]
-\nocite{*}
-\printbibliography[heading=none]
-\end{refsection}    
-
-\large \textbf{In Press} \hfill \\
-\begin{refsection}[inPress.bib]
-\nocite{*}
-\printbibliography[heading=none]
-\end{refsection}    
+    \nocite{*}
+    \printbibliography[heading=none]
+\end{refsection}
 
 \end{document}

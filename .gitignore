@@ -9,3 +9,9 @@
 *.run.xml
 *.synctex.gz
 .vscode/
+
+*.markdown.in
+*.markdown.lua
+*.xdv
+
+_markdown_cv/
