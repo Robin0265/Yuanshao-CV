@@ -15,3 +15,5 @@
 *.xdv
 
 _markdown_cv/
+
+*.synctex

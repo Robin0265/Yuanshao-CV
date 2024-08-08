@@ -1,22 +1,20 @@
-# Research Statement
-
 1. Background
 
 ```
 Aaron's example: 
 
-    <!-- Not found -->
+    <!-- 404 -->
 
 ```
 
 ```
 Sherry's example: 
 
-    Research in Artifcial Intelligence (AI) has advanced at an incredible pace, to the point where it is making its way into our everyday lives, explicitly and behind the scenes. However, beneath their impressive progress, many AI models hide defciencies that amplify social biases (e.g., chatbot assistants making inappropriate or unfair responses to certain questions) or even cause fatal accidents (auto-driving scenarios).
+    - Research in Artificial Intelligence (AI) has advanced at an incredible pace, to the point where it is making its way into our everyday lives, explicitly and behind the scenes. However, beneath their impressive progress, many AI models hide deficiencies that amplify social biases (e.g., chatbot assistants making inappropriate or unfair responses to certain questions) or even cause fatal accidents (auto-driving scenarios).
 
 ```
 
-<!-- to be filled out -->
+to be filled out ...
 
 
 2. Research Questions
@@ -37,9 +35,9 @@ Sherry's example:
 
 **Tentative**:
 
-    - How the fundamental actuator modes are combined, in order to mimic human gaits? [--> `Finite State Machine Design for Prosthesis`]
+- How the fundamental actuator modes are combined, in order to mimic human gaits? [--> `Finite State Machine Design for Prosthesis`]
 
-    - How mechanical design is developed to aid the interactions between Mechatronics systems and environments? [--> `Series-Elastic Actuation`]
+- How mechanical design is developed to aid the interactions between Mechatronics systems and environments? [--> `Series-Elastic Actuation`]
 
 3. Goals & Perspective (Primary) 
 
@@ -55,16 +53,18 @@ Sherry's example:
     - to empower humans to debug and correct AI models interactively. 
     
         - help AI experts run scalable and testable analyses on models in development
-        - help end users collaborate with deployed AIs in a transparant and controllable manner
+        - help end users collaborate with deployed AIs in a transparent and controllable manner
 ```
 
 **Tentative**: 
 
-    - to improve experience of interaction between prostheses / exoskeletons and people with walking disabilities
-        
-        - help develop control strategies that mimics dynamic behavior of human limbs
+- to improve experience of interaction between prostheses / exoskeletons and people with walking disabilities
+    
+    --> *General description of what I did should go here*
 
-        - help develop mechanical designs to be combined with 
+    - develop control strategies that mimics dynamic behavior of human limbs
+
+    - develop elastic elements design to improve robustness of the control system
 
 4. Experiences & Outcomes (Brief Review)
 
@@ -77,15 +77,25 @@ Aaron's example:
 
 - Control system architecture
 
-    - high, mid, low level CTRL
+    - high, mid, low level ctrl
 
 ```
 
 ```
 Sherry's example: 
 
+- Probes the intersection between HCI and NLP
+    
+    - conduct user studies 
+    - interactive tool design
 
 ```
+
+**Tentative**: 
+
+- A `Finite State Machine` that operates on the 3-Phase BLDC motor, serving as basis of gait phase control
+
+- A `Series Spring Design` that is energy-dense and compact, and a modelling of `backlash effect` in the springs, serving as part of SEA to perform precise and robust control
 
 5. Experiences & Outcomes (Project Specific Description)
 
@@ -103,17 +113,45 @@ Aaron's example:
 ```
 Sherry's example: 
 
+- expert debugging of AI in DEV
+
+- end user debugging of AI in SITU
+
 ```
+
+**Tentative**: 
+
+- Implementation and application of `Voltage Mode`, `Current Mode`, `Position Mode`, and `Impedance Mode` to form a basis of `Finite State Machine`. 
+
+    ==Finite State Machine Graph goes here==
+
+- Torsional spring with different stiffness and identical outer + contact radius, assembly parts design, and modelling of `backlash effect`. 
+
+    ==Series Spring Design CAD goes here==
+
+    ==Backlash Model FBD and T-theta diagram goes here==
 
 6. Future Agenda
 
 ```
 Aaron's example: 
 
+    <!-- 404 -->
+
 ```
 
 ```
 Sherry's example: 
 
+- making human-AI interactions more aware of use scenes, and more ~ of human capabilities 
 
+- explore more efficient ways to collect and use benchmark datasets in the context of high-stake apps
+
+- design models that allow to intuitively understand and steer AI
+
+- collaborate in phycology and social science
 ```
+
+**Tentative**: 
+
+- Ultimate Research goal: to investigate more on human locomotion, and develop corresponding control strategies & mechanical design to improve experience of interactions between people + [prosthesis / exoskeletons] and environments
