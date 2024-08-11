@@ -159,10 +159,11 @@ Sherry's example:
 
 ### Series Spring Design of Open-Source Leg
 
-
+[`Series Spring`]
 
 ### Actuator Implementation of Open-Source Leg
 
+[`Moteus Actuator`]
 
 
 
