@@ -1,4 +1,6 @@
-1. Background
+# Research Statement Portfolio
+
+## Background
 
 ```
 Aaron's example: 
@@ -14,10 +16,21 @@ Sherry's example:
 
 ```
 
-to be filled out ...
+
+<!-- 
+    [Prosthesis / Exoskeleton < -- > Human Locomotion, how they are benefit to each other]
+ -->
+- Background of Human Locomotion, Prosthesis - Exoskeleton Development
+
+    Research in Wearable Robotics Systems, such as prosthesis and exoskeleton, has advanced at a swift pace to the point where benefiting people with disabilities. 
 
 
-2. Research Questions
+- However - Dilemma / Conflict --> *Research Question*
+
+    However, most of these systems fail to offer a \[smooth experience\] for addressing the locomotor deficits of disabled people, due to a lack of bidirectional feedback between human locomotion and Mechatronics system. 
+
+
+## Research Questions
 
 ```
 Aaron's example: 
@@ -35,11 +48,14 @@ Sherry's example:
 
 **Tentative**:
 
-- How the fundamental actuator modes are combined, in order to mimic human gaits? [--> `Finite State Machine Design for Prosthesis`]
+Based on the background stated above, my research questions, which also serve for the focus of my research, are as follows:
 
 - How mechanical design is developed to aid the interactions between Mechatronics systems and environments? [--> `Series-Elastic Actuation`]
 
-3. Goals & Perspective (Primary) 
+- How the fundamental actuator modes are combined, in order to mimic human gaits? [--> `Finite State Machine Design for Prosthesis`]
+
+
+## Goals & Perspective (Primary) 
 
 ```
 Aaron's example: 
@@ -55,18 +71,26 @@ Sherry's example:
         - help AI experts run scalable and testable analyses on models in development
         - help end users collaborate with deployed AIs in a transparent and controllable manner
 ```
-
+<!-- 
 **Tentative**: 
 
 - to improve experience of interaction between prostheses / exoskeletons and people with walking disabilities
     
-    --> *General description of what I did should go here*
+    *General description of what I did should go here*
 
     - develop control strategies that mimics dynamic behavior of human limbs
 
-    - develop elastic elements design to improve robustness of the control system
+    - develop elastic elements design to improve robustness of the control system -->
 
-4. Experiences & Outcomes (Brief Review)
+I strive to [overall goals of solving the problem]
+
+On the one hand, [intro to `Series-Elastic Actuation`]
+
+On the other hand, [intro to `Finite State Machine Design for Prosthesis`]
+
+
+
+## Experiences & Outcomes (Brief Review)
 
 ```
 Aaron's example: 
@@ -97,7 +121,9 @@ Sherry's example:
 
 - A `Series Spring Design` that is energy-dense and compact, and a modelling of `backlash effect` in the springs, serving as part of SEA to perform precise and robust control
 
-5. Experiences & Outcomes (Project Specific Description)
+
+
+## Experiences & Outcomes (Project Specific Description)
 
 ```
 Aaron's example: 
@@ -119,7 +145,7 @@ Sherry's example:
 
 ```
 
-**Tentative**: 
+<!-- **Tentative**: 
 
 - Implementation and application of `Voltage Mode`, `Current Mode`, `Position Mode`, and `Impedance Mode` to form a basis of `Finite State Machine`. 
 
@@ -129,9 +155,18 @@ Sherry's example:
 
     ==Series Spring Design CAD goes here==
 
-    ==Backlash Model FBD and T-theta diagram goes here==
+    ==Backlash Model FBD and T-theta diagram goes here== -->
 
-6. Future Agenda
+### Series Spring Design of Open-Source Leg
+
+
+
+### Actuator Implementation of Open-Source Leg
+
+
+
+
+## Future Agenda
 
 ```
 Aaron's example: 
@@ -155,3 +190,4 @@ Sherry's example:
 **Tentative**: 
 
 - Ultimate Research goal: to investigate more on human locomotion, and develop corresponding control strategies & mechanical design to improve experience of interactions between people + [prosthesis / exoskeletons] and environments
+
