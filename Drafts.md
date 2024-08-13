@@ -20,14 +20,15 @@ Sherry's example:
 <!-- 
     [Prosthesis / Exoskeleton < -- > Human Locomotion, how they are benefit to each other]
  -->
-- Background of Human Locomotion, Prosthesis - Exoskeleton Development
 
-    Research in Wearable Robotics Systems, such as prosthesis and exoskeleton, has advanced at a swift pace to the point where benefiting people with disabilities. 
+<!-- - Background of Human Locomotion, Prosthesis - Exoskeleton Development -->
+
+Research in Wearable Robotics Systems, such as prosthesis and exoskeleton, has advanced at a swift pace to the point where benefiting people with disabilities. 
 
 
-- However - Dilemma / Conflict --> *Research Question*
+<!-- - However - Dilemma / Conflict -> *Research Question* -->
 
-    However, most of these systems fail to offer a \[smooth experience\] for addressing the locomotor deficits of disabled people, due to a lack of bidirectional feedback between human locomotion and Mechatronics system. 
+However, most of these systems fail to offer a \[smooth experience\] for addressing the locomotor deficits of disabled people, due to a lack of bidirectional feedback between human locomotion and Mechatronics system. 
 
 
 ## Research Questions
@@ -82,15 +83,18 @@ Sherry's example:
 
     - develop elastic elements design to improve robustness of the control system -->
 
-I strive to [overall goals of solving the problem]
+I strive to improve experience of interactions between wearable robotics systems and disabled people.
 
-On the one hand, [intro to `Series-Elastic Actuation`]
+<!-- [intro to `Series-Elastic Actuation`] -->
 
-On the other hand, [intro to `Finite State Machine Design for Prosthesis`]
+On the one hand, 
+
+<!-- [intro to `Finite State Machine Design for Prosthesis`] -->
+
+On the other hand, 
 
 
-
-## Experiences & Outcomes (Brief Review)
+## Experiences \& Outcomes (Brief Review)
 
 ```
 Aaron's example: 
@@ -120,8 +124,6 @@ Sherry's example:
 - A `Finite State Machine` that operates on the 3-Phase BLDC motor, serving as basis of gait phase control
 
 - A `Series Spring Design` that is energy-dense and compact, and a modelling of `backlash effect` in the springs, serving as part of SEA to perform precise and robust control
-
-
 
 ## Experiences & Outcomes (Project Specific Description)
 
@@ -163,7 +165,7 @@ Sherry's example:
 
 ### Actuator Implementation of Open-Source Leg
 
-[`Moteus Actuator`]
+[`Finite State Machine of Actuator`]
 
 
 
