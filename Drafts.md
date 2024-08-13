@@ -47,7 +47,7 @@ Sherry's example:
     - How do we identify, improve, and cope with imperfect models, while still benefiting from their use?
 ```
 
-**Tentative**:
+<!-- **Tentative**: -->
 
 Based on the background stated above, my research questions, which also serve for the focus of my research, are as follows:
 
@@ -87,11 +87,11 @@ I strive to improve experience of interactions between wearable robotics systems
 
 <!-- [intro to `Series-Elastic Actuation`] -->
 
-On the one hand, 
+On the one hand, I help create mechanical designs for the components of the series elastic actuator, lying a foundation for the robust gait phase control. 
 
 <!-- [intro to `Finite State Machine Design for Prosthesis`] -->
 
-On the other hand, 
+On the other hand, I also help create finite state machines, such as mode transitions for the control states, to make gait phase controls more robust in automation processes.
 
 
 ## Experiences \& Outcomes (Brief Review)
@@ -163,6 +163,10 @@ Sherry's example:
 
 [`Series Spring`]
 
+- CAD of series spring goes here
+
+
+
 ### Actuator Implementation of Open-Source Leg
 
 [`Finite State Machine of Actuator`]
@@ -190,7 +194,8 @@ Sherry's example:
 - collaborate in phycology and social science
 ```
 
-**Tentative**: 
+<!-- **Tentative**: 
 
-- Ultimate Research goal: to investigate more on human locomotion, and develop corresponding control strategies & mechanical design to improve experience of interactions between people + [prosthesis / exoskeletons] and environments
+- Ultimate Research goal: to investigate more on human locomotion, and develop corresponding control strategies & mechanical design to improve experience of interactions between people + [prosthesis / exoskeletons] and environments -->
 
+My ultimate goal is to to investigate more on human locomotion, and develop corresponding control strategies & mechanical design to improve experience of interactions between people + [prosthesis / exoskeletons] and environments. 
