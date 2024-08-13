@@ -1,4 +1,4 @@
-# Research Statement Portfolio
+# Research Statement
 
 ## Background
 
