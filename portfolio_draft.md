@@ -1,10 +1,10 @@
 # Series Spring Project
 
-## Motivation: 
+## Motivation / Background
 
+- 
 
-
-## Research Questions 
+## Research Questions / Objectives
 
 
 
@@ -31,13 +31,19 @@
 
 [Picture of State Machine]
 
+2. Evaluate the design through Step Responses [`Time Domain Specifications`]
+
+
+[Picture of Step Response]
+
 # Development of Robot Swimmer Model
 
 ## Motivation / Background
 
 - Targeting Transport is an emerging field in the medical industry to obtain a more precise cure for the diseased area. This transport process requires a robot transporter to reach the target.
 
-- Traditional methods made designs of robot transporter less effective to do targeting transport, which motivates us to put forward advanced designs and apply a more effective control strategy
+- Traditional methods made designs of robot transporter less effective to do targeting transport, which motivates me to put forward advanced designs and apply a more effective control strategy
+
 
 ## Research Question / Objective
 
@@ -57,14 +63,13 @@ This design aims to:
 
 ![](./images/portfolio/fig01_TrackingBehavior.png)
 
-3. Path Planning Model for Robot's Navigation, and Evaluation of Tracking Behavior
+3. Path Planning Model for Robot's Navigation, and Evaluation of Tracking Behavior [Reference tracking result, and motivations with ]
 
 ![](./images/portfolio/Route_Result.png)
 
 ![](./images/portfolio/fig23.png)
 
 ![](./images/portfolio/fig56.png)
-
 
 
 # Automated Vehicle with Tracking System
