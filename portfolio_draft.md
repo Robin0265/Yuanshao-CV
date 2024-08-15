@@ -19,22 +19,34 @@
 
 ## Motivation / Background
 
+- The current `OSL` software library is biased with a specific hardware provider `Dephy`. 
 
+- A user-friendly, generalized version of the software library is needed so that it is neutral to any hardware provider instead of biased, to provide an opportunity of [low-cost alternatives / Open-Source / collaborations]. 
 
 ## Research Questions / Objectives
 
+1. A generalized, user-friendly version of `OSL` library that is neutral to various hardware alternatives. 
+
+2. BLDC motor controller alternative with [performance evaluation / test], for user reference. 
 
 
 ## Results / Outcomes 
 
-1. Design of a finite state machine that performs mode transition systematically
+1. Design / Implementation of a finite state machine that performs mode transition systematically
 
-[Picture of State Machine]
+[Picture of `State Machine`]
 
-2. Evaluate the design through Step Responses [`Time Domain Specifications`]
+2. A finite state machine that 
+
+3. Evaluate the design through Step Responses [`Time Domain Specifications`]
+
+![](./images/portfolio/velocity_moteus.svg)
+
+![](./images/portfolio/position_comp.svg)
+
+![](./images/portfolio/torque_comp.svg)
 
 
-[Picture of Step Response]
 
 # Development of Robot Swimmer Model
 
