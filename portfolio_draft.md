@@ -14,6 +14,7 @@
 
 ![](./images/portfolio/SeriesSpring_CAD.png)
 
+2. 
 
 # Library Generalization for Open-Source Leg
 
@@ -77,7 +78,7 @@ This design aims to:
 
 ![](./images/portfolio/fig01_TrackingBehavior.png)
 
-3. Path Planning Model for Robot's Navigation, and Evaluation of Tracking Behavior [Reference tracking result, and motivations with ]
+3. Path Planning Model for Robot's Navigation, and Evaluation of Tracking Behavior [Reference tracking result]
 
 ![](./images/portfolio/Route_Result.png)
 
@@ -110,7 +111,7 @@ This design aims to:
 
 ## Motivation
 
-- AI's reference is needed for a quicker, more precise diagnostics, for early prevention / effective therapy of curing common heart diseases. 
+- AI's reference is needed for a quicker, more precise diagnostics, so that prevention / effective therapy of curing common heart diseases is applied timely. 
 
 ## Research Questions / Objectives
 
@@ -132,3 +133,4 @@ This design aims to:
 
 ![](./images/portfolio/SHAPLEY.png)
 
+![](./images/portfolio/Correlation_Analysis.png)
