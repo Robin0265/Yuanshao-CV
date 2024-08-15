@@ -6,16 +6,16 @@
 
 ## Research Questions / Objectives
 
-
+- 
 
 ## Results / Outcomes 
 
-1. Design that easily manufacture and assemble springs in series / parallel
+1. Design that easily assemble springs in series
 
 ![](./images/portfolio/SeriesSpring_CAD.png)
 
 
-# Finite State Machine Design for Moteus Driver
+# Library Generalization for Open-Source Leg
 
 ## Motivation / Background
 
@@ -36,7 +36,9 @@
 
 [Picture of `State Machine`]
 
-2. A finite state machine that 
+2. New Structure of base library
+
+![](./images/portfolio/Class%20Diagram%20Base%20Lib.png)
 
 3. Evaluate the design through Step Responses [`Time Domain Specifications`]
 
@@ -92,7 +94,7 @@ This design aims to:
 
 ## Research Question / Objective
 
-- 
+- Make the process of fetching objects unmanned and efficient. 
 
 ## Results
 
