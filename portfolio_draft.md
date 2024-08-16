@@ -22,13 +22,13 @@
 
 - The current `OSL` software library is biased with a specific hardware provider `Dephy`. 
 
-- A user-friendly, generalized version of the software library is needed so that it is neutral to any hardware provider instead of biased, to provide an opportunity of [low-cost alternatives / Open-Source / collaborations]. 
+- A user-friendly, generalized version of the software library is needed so that it is neutral to any hardware provider instead of biased, to provide an opportunity for [low-cost alternatives / Open-Source/collaborations]. 
 
 ## Research Questions / Objectives
 
-1. A generalized, user-friendly version of `OSL` library that is neutral to various hardware alternatives. 
+1. A generalized, user-friendly version of the `OSL` library that is neutral to various hardware alternatives. 
 
-2. BLDC motor controller alternative with [performance evaluation / test], for user reference. 
+2. BLDC motor controller alternative with [performance evaluation/test], for user reference. 
 
 
 ## Results / Outcomes 
@@ -41,7 +41,7 @@
 
 ![](./images/portfolio/Class%20Diagram%20Base%20Lib.png)
 
-3. Evaluate the design through Step Responses [`Time Domain Specifications`]
+3. Evaluate alternative controllers through Step Responses [`Time Domain Specifications`]
 
 ![](./images/portfolio/velocity_moteus.svg)
 
@@ -49,15 +49,13 @@
 
 ![](./images/portfolio/torque_comp.svg)
 
-
-
 # Development of Robot Swimmer Model
 
 ## Motivation / Background
 
 - Targeting Transport is an emerging field in the medical industry to obtain a more precise cure for the diseased area. This transport process requires a robot transporter to reach the target.
 
-- Traditional methods made designs of robot transporter less effective to do targeting transport, which motivates me to put forward advanced designs and apply a more effective control strategy
+- Traditional methods made designs of robot transporters less effective in targeting transport, which motivates me to put forward advanced designs and apply a more effective control strategy
 
 
 ## Research Question / Objective

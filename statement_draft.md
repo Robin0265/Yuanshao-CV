@@ -23,12 +23,11 @@ Sherry's example:
 
 <!-- - Background of Human Locomotion, Prosthesis - Exoskeleton Development -->
 
-Research in Wearable Robotics Systems, such as prosthesis and exoskeleton, has advanced at a swift pace to the point where benefiting people with disabilities. 
-
+Research in Wearable Robotics Systems, such as prostheses and exoskeletons, has advanced quickly to the point of benefiting people with disabilities. 
 
 <!-- - However - Dilemma / Conflict -> *Research Question* -->
 
-However, most of these systems fail to offer a \[smooth experience\] for addressing the locomotor deficits of disabled people, due to a lack of bidirectional feedback between human locomotion and Mechatronics system. 
+However, most of these systems fail to offer a \[smooth experience\] for addressing the locomotor deficits of disabled people, due to a lack of bidirectional feedback between human locomotion and the Mechatronics system. 
 
 
 ## Research Questions
@@ -76,7 +75,7 @@ Sherry's example:
 **Tentative**: 
 
 - to improve experience of interaction between prostheses / exoskeletons and people with walking disabilities
-    
+  
     *General description of what I did should go here*
 
     - develop control strategies that mimics dynamic behavior of human limbs
