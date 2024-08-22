@@ -3,6 +3,16 @@
 ## Background
 
 ```
+
+Research Vision: 
+
+    - Research questions that I am interested in
+
+    - A broader problem you would like to solve or contribute towards ... 
+
+```
+
+```
 Aaron's example: 
 
     <!-- 404 -->
