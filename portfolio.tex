@@ -1,11 +1,20 @@
 %---------
 \documentclass[12pt]{article}
+
+\usepackage[a4paper, total={6in, 8in}]{geometry}
+
+% Hyperlink
+\usepackage[usenames,dvipsnames]{xcolor}
+\usepackage[unicode, draft=false]{hyperref}
+\definecolor{linkcolour}{rgb}{0,0.2,0.6}
+\hypersetup{colorlinks,breaklinks,urlcolor=linkcolour,linkcolor=linkcolour}
+
 \usepackage{graphicx}
 \graphicspath{ {./images/} }
+\usepackage{float}
 
 \title{Research Portfolio}
 \author{Yuanshao Yang}
-
 
 % -- START OF DOC -- % 
 \begin{document}
@@ -16,16 +25,47 @@
 \tableofcontents
 \newpage
 
-\section{Series Spring Design of Open-Source Leg}
+\section{Series Spring Design of \href{https://www.opensourceleg.org/}{Open-Source Leg}}
 
 \subsection{Background}
 
+
+
 \subsection{Objectives}
+
+
 
 \subsection{Results}
 
+\begin{itemize}
+    \item {Computer Aided Design (CAD) of Series Torsional Spring, shown in Figure \ref*{Series Spring CAD}}. 
+    
+                
+    \begin{figure}[H]
 
-\section{Software Library Generalization for Open-Source Leg}
+        \centering
+        \includegraphics[width=1.0\textwidth]{portfolio/SeriesSpring_CAD.png}
+        \caption{CAD Design of Series Torsional Spring}
+        \label{Series Spring CAD}
+
+    \end{figure}
+
+        
+
+\end{itemize}
+
+
+% \begin{figure}
+
+%     \centering
+%     \includegraphics[width=1.0\textwidth]{portfolio/SeriesSpring_CAD.png}
+%     \caption{CAD Design of Series Torsional Spring}
+%     \label{Series Spring CAD}
+
+% \end{figure}
+\newpage
+
+\section{Software Generalization for \href{https://www.opensourceleg.org/}{Open-Source Leg}}
 
 
 \subsection{Background}
@@ -33,26 +73,84 @@
 % -- BACKGROUND BEGINS -- % 
 
 
-Thus, a generalized, user-friendly version of the software library is needed to serve as a basis for alternative prosthetic leg forks. Such library will allow other researchers to fork their version of Open-Source Leg with lower costs and more standardized features, in order to offer a common platform for researchers to test and evaluate further control strategies and mechanical designs.
+% WHAT IS OPENSOURCELEG
+% -- DRAWNBACK / GAP: HOW / WHY IT IS NOT GENERALIZED ENOUGH -- %
+The Open-Source Leg project is a standardized hardware and software platform for prosthesis designs, controls, and tests, aimed to eliminate the barriers among different prosthesis researches and serve as a bridge for collaborative efforts in prosthetic leg design and control. Such platform is expected to be flexible towards hardware choices. However, the previous versions of Open-Source Leg software library is biased to a specific hardware choice, which fails to close the gap between individual researches and adds difficulty in comparing experiment results. 
+
+% -- MOTIVATION: A MORE GENERALIZED OPENSOURCELEG -- %
+Thus, a generalized, user-friendly version of the software library is needed to serve as a basis for alternative prosthetic leg forks. Such library will allow other researchers to create their version of prosthetic leg with lower costs and more standardized features, in order to offer a common platform for researchers to test and evaluate further control strategies and mechanical designs.
 
 % -- BACKGROUND ENDS -- % 
 
-
 \subsection{Objectives}
+
+\begin{enumerate}
+    \item {Create a base library for Open-Source Leg actuator and sensor modules, to serve as a template for standardized development.}
+    \item {Redevelop the instance of actuator modules based on the generalized library design.}
+    \item {Test and compare the performance of different actuators and sensors based on the generalized library design, to test the .}
+\end{enumerate}
 
 \subsection{Results}
 
-\includegraphics{portfolio/Class Diagram Base Lib.png}
 
-\section{Motion Analysis \& Design of a Robot Swimmer Model}
+\begin{itemize}
+
+    \item{A base library for Open-Source Leg actuator and sensor modules, as Figure \ref*{Python Lib Class Diagram}, and examples of a redeveloped actuator module.}
+    
+    \begin{figure}[H]
+        \centering
+        \includegraphics[width=0.8\textwidth]{portfolio/Class Diagram Base Lib.png}
+        \caption{Class Diagram of Generalized Python Library}
+        \label{Python Lib Class Diagram}
+    \end{figure}
+    \item {Performance evaluation across different actuator choices, as Figure \ref{Dephy-Moteus Comp}}
+    
+    \begin{figure}[H]
+        \centering
+        \includegraphics[width=0.6\textwidth]{portfolio/position_comp.png}
+        \includegraphics[width=0.6\textwidth]{portfolio/torque_comp.png}
+        \caption{Performance Evaluation \& Comparison of Different Actuators on Generalized Library}
+        \label{Dephy-Moteus Comp}
+    \end{figure}
+    
+
+\end{itemize}
+
+\newpage
+
+\section{Motion Analysis \& Design of Robot Swimmer Model}
 
 
 \subsection{Background}
 
+Targeting transport is an emerging field in the medical industry that is attempting to obtain a more precise cure for the diseased area in the human body. Although attempts such as targeted therapy are performed, they still inherits the same problem that both the location and the amount of optimal dosing are hard to be controlled. 
+
+Therefore, a complete robot swimmer model should be developed to perform the task, due to its better performance than chemical-based therapies. Such design aims to offer a feasible solution for future research in control strategies for robot swimmers, in order to achieve better performances in targeting transportation. 
+
+
+
 \subsection{Objectives}
+
+
 
 \subsection{Results}
 
+\begin{enumerate}
+
+    \item {Mechanical Design of the Components of Robot Swimmer, with Computational Fluid Dynamics (CFD) analysis to validate the design.}
+    \item {Kinematics Analysis of the Robot Swimmer Model.}
+    \item {Control strategies applied to the Robot Swimmer Model (Feedback Control \& Feedforward Control), with performance evaluation in simulations.}
+
+    \begin{figure}[H]
+        \centering
+        \includegraphics[width=0.45\textwidth]{portfolio/fig01_TrackingBehavior.png}
+        \includegraphics[width=0.45\textwidth]{portfolio/feedforward_track.png}
+        \caption{Performance Evaluation of Tracking Behavior Under Different Control Strategies}
+        \label{Control-RobotSwimmer}
+    \end{figure}
+\end{enumerate}
+
+\newpage
 
 \section{Automated Vehicle with Tracking System}
 
@@ -63,8 +161,9 @@ Thus, a generalized, user-friendly version of the software library is needed to 
 
 \subsection{Results}
 
+\newpage
 
-\section{Classification Model Development for Heart Diseases}
+\section{Classification Model Development for Heart Disease Diagnosis}
 
 
 \subsection{Background}
