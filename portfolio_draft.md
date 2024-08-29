@@ -89,7 +89,7 @@ This design aims to:
 
 ## Motivation
 
-- 
+
 
 ## Research Question / Objective
 

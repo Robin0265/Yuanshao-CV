@@ -1,10 +1,11 @@
 %---------
 \documentclass[12pt]{article}
 
-\usepackage[a4paper, total={8in, 8in}]{geometry}
+\usepackage[a4paper, total={7in, 10in}]{geometry}
 
 % Hyperlink
 \usepackage[usenames,dvipsnames]{xcolor}
+\usepackage{indentfirst}
 \usepackage[unicode, draft=false]{hyperref}
 \definecolor{linkcolour}{rgb}{0,0.2,0.6}
 \hypersetup{colorlinks,breaklinks,urlcolor=linkcolour,linkcolor=linkcolour}
@@ -29,15 +30,25 @@
 
 \subsection{Background}
 
-Recent researches have been proved that the 
+% WHAT IS TORSIONAL SPRING
+% -- DRAWNBACK / GAP: WHY AND HOW SINGLE SPRING DOES NOT SERVE PROPERLY -- %
+
+Recent researches have proved the importance of torsional springs in Series Elastic Actuator (SEA) designs, for their advantage in higher specific energy and energy density. However, single spring often arises 
+
+% -- MOTIVATION: LINKING SPRINGS IN SERIES-- %
+
+Therefore, the strategy of Series Torsional Spring is put forward to address the issue. 
+
+
+
 
 \subsection{Objectives}
 
 \begin{enumerate}
 
-    \item {Generate a mechanical design of series spring with easier mounting strategies.}
+    \item {Generating mechanical design of series spring with easier mounting procedures.}
     \item {Evaluate the backlash effect on different kinds of interfaces (e.g. interface between Cam Shaft and Spring Flexures)}
-    \item {Evaluate the effect on broadening the design space from series spring design. }
+    \item {Validate the effect on spanning the design space from series spring design.}
 
 \end{enumerate}
 
@@ -161,7 +172,7 @@ Therefore, a complete robot swimmer model should be developed to perform the tas
     
     \begin{figure}[H]
         \centering
-        \includegraphics*[width = 0.7\textwidth]{portfolio/FBD_RobotSwimmer.png}
+        \includegraphics*[width = 0.5\textwidth]{portfolio/FBD_RobotSwimmer.png}
         \caption{Free Body Diagram of Robot Swimmer Model}
         \label{FBD-RobotSwimmer}
     \end{figure}
@@ -186,7 +197,19 @@ Therefore, a complete robot swimmer model should be developed to perform the tas
 
 \subsection{Background}
 
+Due to the increase probability to get heart diseases, the hospital is experiencing more and more pressure from the cardiovascular department. The idea to develop a classification model comes up correspondingly, to reduce the heavy burden from . Such model is expected to classfy different kinds of heart diseases, predict the probability of having heart diseases when given the specifications of one's health status, and  
+
 \subsection{Objectives}
+
+\begin{enumerate}
+
+    \item{\small Work on diagnostic data of cardiac patients through feature selection}
+    \item{\small Develop regression models (e.g., Random Forest) via Scikit-Learn and PyTorch in Python and use training data sets of clinical diagnostic data}
+    \item{\small Test model performance on internal datasets}
+    \item{\small Perform interpretability analysis of built models using variable sensitivity analysis}
+    \item{\small Enhance classification processes' precision of the model by analyzing visualized Decision Trees}
+
+\end{enumerate}
 
 \subsection{Results}
 
@@ -220,7 +243,17 @@ Therefore, a complete robot swimmer model should be developed to perform the tas
 
 \subsection{Background}
 
+
+
+
 \subsection{Objectives}
+
+\begin{enumerate}
+
+    \item {Design and control of the gimbal stabilizer, which processes the estimation of distance and deviation angle from the camera module.}
+    \item {Build communication portal among the gimbal stabilizer, the the camera module, and the central controller for cruise control.}
+
+\end{enumerate}
 
 \subsection{Results}
 
