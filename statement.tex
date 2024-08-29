@@ -1,62 +1,59 @@
 %---------
 \documentclass[12pt]{article}
-
+\usepackage[a4paper, total={7in, 10in}]{geometry}
 \usepackage{graphicx}
+% Hyperlink
+\usepackage[usenames,dvipsnames]{xcolor}
 \usepackage{indentfirst}
+\usepackage[unicode, draft=false]{hyperref}
+\definecolor{linkcolour}{rgb}{0,0.2,0.6}
+\hypersetup{colorlinks,breaklinks,urlcolor=linkcolour,linkcolor=linkcolour}
 \graphicspath{{./images/}}
 \usepackage{float}
+
+\title{Research Statement}
+
+\author{Yuanshao Yang}
+
 \begin{document}
 
-\tableofcontents
-
-\newpage
+\maketitle
 
 
-\section{Research Statement}
+\section{Background \& Motivation}
 
-    \subsection{Background \& Motivation}
+% RESEARCH QUESTIONS I AM INTERESTED IN
+% A BROADER PROBLEM YOU WOULD LIKE TO SOLVE
 
-    Research in Wearable Robotics Systems, such as prosthesis and exoskeleton, has advanced to the point where benefiting people with disabilities. However, most of these systems fail to offer a [smooth] experience for addressing the locomotor deficits of disabled people, due to a lack of bidirectional feedback between human locomotion and Mechatronics system. 
+Research in Wearable Robotics Systems, such as prosthesis and exoskeleton, has advanced to the point where benefiting people with disabilities. However, most of these systems fail to offer a [smooth] experience for addressing the locomotor deficits of disabled people, due to a lack of bidirectional feedback between human locomotion and Mechatronics system. 
 
-    
 
-    \subsection{Research Questions}
-        Based on the background stated above, my research questions, which also serve for the focus of my research, are as follows:
-        \begin{itemize}
-                
-                \item {How the fundamental actuator modes are combined, in order to mimic human gaits?}
-                \item {How mechanical design is developed to aid the interactions between Mechatronics systems and environments?}
+\section{Research Questions}
 
-        \end{itemize}
+% Based on the background stated above, my research questions, which also serve for the focus of my research, are as follows:
+
+The presence of these issues raises the following questions, which also serves as my research focus: 
+
+\begin{itemize}
+            
+    \item {How the fundamental actuator modes are combined, in order to mimic human gaits?}
+    \item {How mechanical design is developed to aid the interactions between Mechatronics systems and environments?}
+
+\end{itemize}
+
+% A SHORT PARAGRAPH THAT SHOWS MOTIVATION
+
+\section{Related Projects}
+
+% A SHORT PARAGRAPH OF THE ASPECTS OF MY RESEARCH SOLUTIONS
+
+    \subsection{Open-Source Leg}
         
+        \subsection{Series-Elastic Actuation}
+        \subsection{Finite State Machine Design for Prosthesis}
 
-    \subsection{Related Projects}
+    \subsection{Design \& Control of Bionic Robot Swimmer} 
 
-        \subsubsection{Open-Source Leg}
-            
-            \subsubsection{Series-Elastic Actuation}
-            \subsubsection{Finite State Machine Design for Prosthesis}
-
-        \subsubsection{Design \& Control of Bionic Robot Swimmer} 
-
-
-        \subsection{Gimbal Stabilization Camera Design}
-
-    \subsection{Goals \& Perspectives}
-
-        I strive to improve experience of interactions between wearable robotics systems and disabled people.
-
-        On the one hand, I help create mechanical designs for the components of the series elastic actuator, lying a foundation for the robust gait phase control. 
-            
-        On the other hand, I also help create finite state machines, such as mode transitions for the control states, to make gait phase controls more robust in automation processes.
-
-    \subsection{Future Agenda}
-
-        My long term research goal is to to investigate more on human locomotion, and develop corresponding control strategies \& mechanical design to improve experience of interactions between people + prosthesis / exoskeletons and environments \cite{SpringDesign_OSL}
-
-    \subsection{Reference}
-
-\section{Publications}
 
 \bibliographystyle{ieeetr}
 \bibliography{StatementRef}
