@@ -1,5 +1,5 @@
 %---------
-\documentclass[12pt]{article}
+\documentclass[8pt]{article}
 \usepackage[a4paper, total={7in, 10in}]{geometry}
 \usepackage{graphicx}
 % Hyperlink
@@ -10,6 +10,12 @@
 \hypersetup{colorlinks,breaklinks,urlcolor=linkcolour,linkcolor=linkcolour}
 \graphicspath{{./images/}}
 \usepackage{float}
+
+% REFERENCE EXTENSIONS
+\newcommand*{\fullref}[1]{\hyperref[{#1}]{\autoref*{#1} \nameref*{#1}}} % One single link
+\newcommand*{\subsecref}[1]{\hyperref[{#1}]{Section \ref*{#1}, \nameref*{#1}}}
+\newcommand*{\subsubsecref}[1]{\hyperref[{#1}]{Section , \nameref*{#1}}}
+\newcommand*{\parref}[1]{\hyperref[{#1}]{\nameref*{#1}}}
 
 \title{Research Statement}
 
@@ -36,24 +42,51 @@ The presence of these issues raises the following questions, which also serves a
 
 \begin{itemize}
             
-    \item {How the fundamental actuator modes are combined, in order to mimic human gaits?}
+    % \item {How the fundamental actuator modes are combined, in order to mimic human gaits?}
     \item {How mechanical design is developed to aid the interactions between Mechatronics systems and environments?}
 
 \end{itemize}
 
 % A SHORT PARAGRAPH THAT SHOWS MOTIVATION
 
+I strive to construct and improve the experience of interactions between Mechatronics systems and human activities.
+
+% More
+
 \section{Related Projects}
+
+In essence, my research helps to improve the experience of human - robotics systems on the following aspects: 
+
+\begin{itemize}
+    \item {I help improve series elastic actuator (SEA) designs by the implementation of \hyperref[sec:series-spring]{torsional springs assemblies}, that both spans the mechanical design space as energy storage gadgets and maintains high performance (e.g. low stiffness behaviors\cite{SpringDesign_OSL}).}
+    \item {I help optimize the design of robotics systems and their control strategies from mechanical designs and computational simulations.}
+    \item {I help optimize the design of the robotics software systems to create a more generalized platform in evaluating further mechanical designs and control strategies of wearable robotics systems.}
+\end{itemize}
 
 % A SHORT PARAGRAPH OF THE ASPECTS OF MY RESEARCH SOLUTIONS
 
-    \subsection{Open-Source Leg}
-        
-        \subsection{Series-Elastic Actuation}
-        \subsection{Finite State Machine Design for Prosthesis}
+    \subsection{Series-Spring Design \& Evaluation of Open-Source Leg}  \label{sec:series-spring}
+
+    \subsection{Software Library Design \& Generalization of Open-Source Leg}
 
     \subsection{Design \& Control of Bionic Robot Swimmer} 
 
+
+\section{Future Agenda} \label{sec:Agenda}
+
+My long-term research goal is keeping to .. 
+
+My past work mainly focuses on the 
+
+Nevertheless, 
+
+Specifically, the research focus lies as follows: 
+
+\begin{itemize}
+
+    \item {}
+    \item 
+\end{itemize}
 
 \bibliographystyle{ieeetr}
 \bibliography{StatementRef}
