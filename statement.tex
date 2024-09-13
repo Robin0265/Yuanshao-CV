@@ -6,8 +6,8 @@
 \usepackage[usenames,dvipsnames]{xcolor}
 \usepackage{indentfirst}
 \usepackage[unicode, draft=false]{hyperref}
-\definecolor{linkcolour}{rgb}{0,0.2,0.6}
-\hypersetup{colorlinks,breaklinks,urlcolor=linkcolour,linkcolor=linkcolour}
+% \definecolor{linkcolour}{rgb}{0,0.2,0.6}
+% \hypersetup{colorlinks,breaklinks,urlcolor=linkcolour,linkcolor=linkcolour}
 \graphicspath{{./images/}}
 \usepackage{float}
 
@@ -31,7 +31,7 @@
 % RESEARCH QUESTIONS I AM INTERESTED IN
 % A BROADER PROBLEM YOU WOULD LIKE TO SOLVE
 
-Research in Wearable Robotics Systems, such as prosthesis and exoskeleton, has advanced to the point where benefiting people with disabilities. However, most of these systems fail to offer a [smooth] experience for addressing the locomotor deficits of disabled people, due to a lack of bidirectional feedback between human locomotion and Mechatronics system. 
+Research in Wearable Robotics Systems, such as prosthesis and exoskeleton, has advanced to the point where benefiting people with disabilities. However, most of these systems fail to offer a unified experience for addressing the locomotor deficits of disabled people, due to a lack of bidirectional feedback between human locomotion and Mechatronics system. 
 
 
 \section{Research Questions}
@@ -43,15 +43,23 @@ The presence of these issues raises the following questions, which also serves a
 \begin{itemize}
             
     % \item {How the fundamental actuator modes are combined, in order to mimic human gaits?}
-    \item {How mechanical design is developed to aid the interactions between Mechatronics systems and environments?}
+    
+    % --- KEY RESEARCH QUESTIONS CORRESPONDING SPECIFIC PROJECTS
+    % --- Robot Swimmer Project --- % 
+    \item {How sensing, reasoning, and acting mechanics are applied and interacted in bionic robotics systems?}
+    % --- Open-Source leg Generalization --- %
+    \item {How software designs are better optimized to provide a generalized, user-friendly experience in robotics system developments?}
+    % --- Series Spring Project --- %
+    \item {How designs in compact mechanical systems are performed, to balance tradeoffs and spans the design space in common wearable robotics applications?}
+    
 
 \end{itemize}
 
 % A SHORT PARAGRAPH THAT SHOWS MOTIVATION
 
-I strive to construct and improve the experience of interactions between Mechatronics systems and human activities.
+I seek to develop technologies and equipments that 
 
-% More
+% 
 
 \section{Related Projects}
 
@@ -59,11 +67,11 @@ In essence, my research helps to improve the experience of human - robotics syst
 
 \begin{itemize}
 
-    \item {I help improve series elastic actuator (SEA) designs by the implementation of \hyperref[sec:series-spring]{torsional springs assemblies}, that both spans the mechanical design space as energy storage gadgets and maintains high performance (e.g. low stiffness behaviors\cite{SpringDesign_OSL}).}
+    \item {I help improve series elastic actuator (SEA) designs by the implementation of \hyperref[sec:series-spring]{torsional springs assemblies}, that both spans the mechanical design space as energy storage gadgets and maintains high performance in low stiffness behaviors \cite{SpringDesign_OSL}.}
     
-    \item {I help optimize the design of robotics systems and their control strategies from mechanical designs and computational simulations.}
+    \item {I help optimize \hyperref[sec:RobotSwimmer]{the design of robotics systems and their control strategies} from mechanical designs and computational simulations.}
     
-    \item {I help optimize the design of the robotics software systems to create a more generalized platform in evaluating further mechanical designs and control strategies of wearable robotics systems.}
+    \item {I help optimize the design of the \hyperref[sec:OSL-Library]{robotics software systems} to create a more generalized platform in evaluating further mechanical designs and control strategies of wearable robotics systems.}
 
 \end{itemize}
 
@@ -71,25 +79,49 @@ In essence, my research helps to improve the experience of human - robotics syst
 
     \subsection{Series-Spring Design \& Evaluation of Open-Source Leg}  \label{sec:series-spring}
 
-    \subsection{Software Library Design \& Generalization of Open-Source Leg}
+    Recent researches have proved the importance of torsional springs in Series Elastic Actuator (SEA) designs, for their advantage in higher specific energy and energy density. 
 
-    \subsection{Design \& Control of Bionic Robot Swimmer} 
+    % -- MOTIVATION: LINKING SPRINGS IN SERIES-- %
 
+    Therefore, the strategy of Series Torsional Spring is put forward to address the issue. 
+
+
+    \subsection{Software Library Design \& Generalization of Open-Source Leg}   \label{sec:OSL-Library}
+
+    The Open-Source Leg project is a standardized hardware and software platform for prosthesis designs, controls, and tests, aimed to eliminate the barriers among different prosthesis researches and serve as a bridge for collaborative efforts in prosthetic leg design and control. Such platform is expected to be flexible towards hardware choices. However, the previous versions of Open-Source Leg software library is biased to a specific hardware choice, which fails to close the gap between individual researches and adds difficulty in comparing experiment results. 
+
+    % -- MOTIVATION: A MORE GENERALIZED OPENSOURCELEG -- %
+    Thus, a generalized, user-friendly version of the software library is needed to serve as a basis for alternative prosthetic leg forks. Such library will allow other researchers to create their version of prosthetic leg with lower costs and more standardized features, in order to offer a common platform to test and evaluate further mechanical designs and control strategies.
+
+    \subsection{Design \& Control of Bionic Robot Swimmer}  \label{sec:RobotSwimmer}
+
+    Targeting transport is an emerging field in the medical industry that is attempting to obtain a more precise cure for the diseased area in the human body. Although attempts such as targeted therapy are performed, they still inherits the same problem that both the location and the amount of optimal dosing are hard to be controlled. 
+
+    Therefore, a complete robot swimmer model should be developed to perform the task, due to its better performance than chemical-based therapies. Such design aims to offer a feasible solution for future research in control strategies for robot swimmers, in order to achieve better performances in targeting transportation. 
+    
+    
 
 \section{Future Agenda} \label{sec:Agenda}
 
-My long-term research goal is keeping to .. 
+In general, my current research mainly focus on the construction of fundamental wearable robotics systems. Nevertheless, my current research lacks a deeper insight into fundamental biomechanics, which will benefit my understanding in human - robot interactions.  
 
-My past work mainly focuses on the 
-
-Nevertheless, 
-
-Specifically, the research focus lies as follows: 
+Specifically, my future research will focus on the followings:
 
 \begin{itemize}
 
+    \item {How specific control strategies are designed to aid walking disabilities in prosthesis}
+    \begin{itemize}
+        \item {Specifically, how control strategies can be optimized to provide net-positive mechanical energy to aid restoring appropriate gait characteristics of amputees \cite{OSL2020}. }
+    \end{itemize}
     \item {}
-    \item 
+    \begin{itemize}
+        \item {}
+    \end{itemize}
+    \item {}
+    \begin{itemize}
+        \item {}
+    \end{itemize}
+
 \end{itemize}
 
 \bibliographystyle{ieeetr}

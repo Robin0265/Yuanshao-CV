@@ -26,8 +26,11 @@
 
 % article class because we want to fully customize the page and not use a cv template
 \documentclass[letter,12pt]{article}
+\usepackage[document]{ragged2e}
 \usepackage{moresize}
 \usepackage{blindtext}
+\usepackage{paralist}
+\usepackage{indentfirst}
 %----------------------------------------------------------------------------------------
 %	FONT
 %----------------------------------------------------------------------------------------
@@ -304,21 +307,20 @@
 % \end{itemize}
 
 \section{Skills}
-\begin{itemize}[nosep,after=\strut, leftmargin=1em, itemsep=3pt]
-    \item{Programming}
+
     \begin{itemize}
-        \item C/C++, Python (PyTorch, Scikit-Learn, etc) 
-    \end{itemize}
-    \item{Tools}
-    \begin{itemize}
-        \item \textbf{General Computation \& Simulation Tools:} MATLAB \& Simulink Toolbox, MSC Adams 
+        \setlength{\itemsep}{1pt}
+        \setlength{\parskip}{0pt}
+        \setlength{\parsep}{0pt}
+        \item \textbf{General Programming:} C/C++, Python
+        \item \textbf{General Computation \& Simulation Tools:} MATLAB \& Simulink Toolbox, MSC Adams
+        \item \textbf{Data Science \& Machine Learning Toolbox:} Scikit-Learn, PyTorch
+        \item \textbf{Computer Vision:} OpenCV
         \item \textbf{Mechanical Design:} SolidWorks, AutoCAD
         \item \textbf{Embedded System Design:} Keil MDK
         \item \textbf{Writing \& Formatting:} LaTeX
     \end{itemize}
-\end{itemize}
-
-
+    
 %----------------------------------------------------------------------------------------
 %	PUBLICATIONS
 %----------------------------------------------------------------------------------------
