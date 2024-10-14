@@ -13,9 +13,11 @@ Moreover, I help designed a series spring architecture that possesses larger ene
  
 
 <!-- Emphasis on "PEOPLE FIRST ENGINEERING", thus clarify my motivation in prosthesis + exoskeleton -->
-What attracts me most in CoE is the philosophy of "people-first engineering", which allows me 
+What attracts me most in CoE is the philosophy of "people-first engineering", which allows me to make it 
 
 # Graduate Studies
+
+More and 
 
 ## UMich
 
