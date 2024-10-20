@@ -87,11 +87,11 @@ I seek to analyze the dynamics of common biological system and develop correspon
 
     \subsection{Design \& Control of Bionic Robot Swimmer}  \label{sec:RobotSwimmer}
     
-    To address the first research question "How sensing, reasoning, and acting mechanics are applied and interacted in bionic robotics systems", I began my attempt in combining biomechanics principles and Mechatronics approaches by the design of a bionic robot swimmer model.
+    To address the question "How sensing, reasoning, and acting mechanics are applied and interacted in bionic robotics systems", I began my attempt in combining biomechanics principles and Mechatronics approaches by the design of a bionic robot swimmer model.
 
     In general, I designed a robot's dynamics model which senses obstacles in the nearby environment, plans corresponding paths to avoid obstacles, and acts to perform target tracking. 
 
-    Firstly, I developed a mechanical model which mimics the bacteria with dual flagella in Computer Aided Designs (CAD), that is compatible with common sensors. Moreover, I implemented the A-star\cite{AstarAlgo} path planning algorithm to plan the path of the robot swimmer, and established a inverse kinematics model to estimate the proper actuation for a specific trajectory. Finally, I designed the control strategies by implementing feedback control and feedforward control respectively, to simulate the robot swimmer's performance object tracking and obstacle avoidance.
+    Firstly, I developed a mechanical model which mimics the bacteria with dual flagella in \textbf{Computer Aided Design (CAD)}, that is compatible with common sensors, and verified the design through \textbf{Computational Fluid Dynamics (CFD)} analysis, that such design will empower flexibility in motion to allow various postures of obstacle avoidance. Moreover, I implemented the A-star\cite{AstarAlgo} path planning algorithm to plan the path of the robot swimmer, and established an \textbf{inverse kinematics model} to estimate the proper actuation for a specific trajectory. Finally, I designed the control strategies through \textbf{feedback control and feedforward control}, respectively, to simulate the robot swimmer's performance object tracking and obstacle avoidance. Also, I analyzed the behavior of the linearized system and defined the margins of the controller design to reach stability though \textbf{root locus analysis}\cite{RootLocus}.
 
     Such design aims to offer a feasible solution for future research in control strategies for robot swimmers, in order to achieve better performances in targeting transportation. 
     
@@ -99,7 +99,7 @@ I seek to analyze the dynamics of common biological system and develop correspon
 
     \subsection{Software Library Design \& Generalization of Open-Source Leg}   \label{sec:OSL-Library}
 
-    To address the research question "How robotics systems design can be better optimized to provide a generalized, user-friendly experience in robotics system developments", I began my attempt in redesigning the software library of Open-Source Leg project.
+    To address the question "How robotics systems design can be better optimized to provide a generalized, user-friendly experience in robotics system developments", I began my attempt in redesigning the software library of Open-Source Leg project.
     
     The Open-Source Leg project is a standardized hardware and software platform for prosthesis designs, controls, and tests. Such platform is expected to be flexible towards hardware choices. However, the previous versions of its software library is biased to a specific hardware choice used in one lab, which fails to close the gap between individual researches and adds difficulty in comparing experiment results. 
 
@@ -114,7 +114,7 @@ I seek to analyze the dynamics of common biological system and develop correspon
 
     
     % -- MOTIVATION: LINKING SPRINGS IN SERIES-- %
-    To address the "How designs in compact mechanical systems are performed, to balance tradeoffs and spans the design space in common wearable robotics applications", I began my attempt in designing a series-spring system that is primarily used in the Open-Source Leg hardware design, to explore the design space of mechanical components.
+    To address the question "How designs in compact mechanical systems are performed, to balance tradeoffs and spans the design space in common wearable robotics applications", I began my attempt in designing a series-spring system that is primarily used in the Open-Source Leg hardware design, to explore the design space of mechanical components.
 
     In general, I designed a spring architecture that links multiple torsional springs in series through flat head screws, which simplifies the configuration of series springs. I designed the strategy to measure the deflection of the spring through computer vision. I also evaluated the backlash effect caused by the connections at each springs. Such design will allow a larger energy capacity and better low-stiffness behavior compared with single springs, thus spanning the design space of series elastic actuator components. 
 
