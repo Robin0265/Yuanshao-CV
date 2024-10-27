@@ -1,0 +1,43 @@
+%---------
+\documentclass[8pt]{article}
+%  8.3in x 11.7in
+\usepackage[a4paper, total={7.3in, 10.7in}]{geometry}
+\usepackage[affil-it]{authblk}
+\usepackage{graphicx}
+% Hyperlink
+\usepackage[usenames,dvipsnames]{xcolor}
+\usepackage{indentfirst}
+\usepackage[unicode, draft=false]{hyperref}
+% \definecolor{linkcolour}{rgb}{0,0.2,0.6}
+
+% \hypersetup{colorlinks,breaklinks,urlcolor=linkcolour,linkcolor=linkcolour}
+\graphicspath{{./images/}}
+\usepackage{float}
+
+% REFERENCE EXTENSIONS
+\newcommand*{\fullref}[1]{\hyperref[{#1}]{\autoref*{#1} \nameref*{#1}}} % One single link
+\newcommand*{\subsecref}[1]{\hyperref[{#1}]{Section \ref*{#1}, \nameref*{#1}}}
+\newcommand*{\subsubsecref}[1]{\hyperref[{#1}]{Section , \nameref*{#1}}}
+\newcommand*{\parref}[1]{\hyperref[{#1}]{\nameref*{#1}}}
+
+\title{Research Proposal}.
+
+\author{Yuanshao Yang}
+\affil{Department of Mechanical Engineering, Univereity of Michigan}
+\date{}
+
+\begin{document}
+
+\maketitle
+
+
+\section{Background \& Motivation}
+
+
+
+\section{Research Questions}
+
+
+
+
+\end{document}
