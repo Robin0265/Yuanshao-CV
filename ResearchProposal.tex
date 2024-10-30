@@ -54,29 +54,55 @@
     \item what is already known in the field (with several critical studies)?
     
     \begin{itemize}
-        \item 
+        \item common design goals for prostheses exoskeletons
+        \begin{itemize}
+            \item light-weight \cite{ProsthesisOverview}
+            \item high energy density and efficiency \cite{OSLSpring}
+        \end{itemize}
+        \item Therefore: 2 approaches to design prostheses / exoskeletons
+        \begin{itemize}
+            \item tethered \cite{tetheredExoEg}
+            \item autonomous \cite{OSL2020}
+        \end{itemize}
     \end{itemize}
     
     \item Why these studies are not sufficient, thus requiring my further research?
     
     \begin{itemize}
-        \item 
+        \item both design are trade-offs: tethered exo has a smaller added mass penalty \cite{tetheredExoBenefits}, while autonomous exo is easier to generate light-weight features \cite{OSLSpring}. 
+        \item The ultimate goal of prostheses / exoskeleton design is to be generalized in design and personalized in user experience. 
     \end{itemize}
     
     \item \textbf{Key Research Questions, and Relevant Rationale}
     
     \begin{itemize}
-        \item 
+        % Research Questions
+        \item how to weigh the benefits of drawbacks of different prostheses / exoskeleton design for personalization? 
     \end{itemize}
+    
 
 \end{itemize}
 
 \section{Plans and Methods}
 
-\section{Significance, Conclusion}
+\begin{itemize}
+    \item Biomechanics: multiple ways to evaluate metabolic cost, by \textbf{Sensor Fusion} (respirometry, electromyography (EMG))
+    \begin{itemize}
+        \item Lead to: mixed control strategy (data driven + classical control)
+        \item benefit: better understanding of mechanics (mid-level control side), contributes to the high level control (e.g. locomotion modes, various walking speed), make it more adaptable to dynamic movement.    
+    \end{itemize}
+    \item Mechatronics (wearable robotics) design: variable stiffness and impedance (interchangeable components \cite{ProsthesisOverview}, compact energy storage devices \cite{OSLSpring}, impedance control \cite{VariableMecheSys}). 
+    \begin{itemize}
+        \item Goal: provide net energy gain for the user, thus reducing the metabolic cost of locomotion
+        \item Components should be adjustable (e.g. series spring), while maintaining control bandwidth \cite{SEABandwidth}
+    \end{itemize}
+\end{itemize}
+
+\section{Significance}
 
 \begin{itemize}
-    \item 
+    \item personalized in \textbf{assistance}
+    \item personalized in \textbf{rehabilitation}
 \end{itemize}
 
 \bibliographystyle{ieeetr}
