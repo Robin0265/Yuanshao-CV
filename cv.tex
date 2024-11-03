@@ -88,17 +88,19 @@
 \titlespacing{\section}{0pt}{10pt}{10pt}
 
 %for publications
-\usepackage[style=authoryear,sorting=ynt, maxbibnames=2]{biblatex}
+\usepackage[style=numeric-verb, maxbibnames=99]{biblatex}
+\addbibresource{inReview.bib}
+\renewbibmacro{in:}{}
 
 %Setup hyperref package, and colours for links
 \usepackage[unicode, draft=false]{hyperref}
 \definecolor{linkcolour}{rgb}{0,0.2,0.6}
 \hypersetup{colorlinks,breaklinks,urlcolor=linkcolour,linkcolor=linkcolour}
-% \addbibresource{citations.bib}
 \setlength\bibitemsep{1em}
 
 %for social icons
 \usepackage{fontawesome5}
+% \usepackage{cite}
 
 %debug page outer frames
 %\usepackage{showframe}
@@ -132,13 +134,13 @@
 \section{Education}
 \begin{tabularx}{\linewidth}{@{}l X@{}}	
 
-    \textit{\textbf{Aug 2023 - May 2025}} & {} \hfill {\small{\textbf{University of Michigan - Ann Arbor}}}\\
+    \textit{\textbf{Aug 2023 - Present}} & {} \hfill {\small{\textbf{University of Michigan - Ann Arbor}}}\\
     College of Engineering \\
-    Mechanical Engineering BSE / Concentration in Robotics & \hfill GPA: 4.00/4.00\\
+    BSE, Mechanical Engineering (Concentration in Robotics) & \hfill GPA: 4.00/4.00\\
 
-    \textit{\textbf{Sept 2021 - June 2025}} & {} \hfill \small{\textbf{Sichuan University, Chengdu}}\\ 
+    \textit{\textbf{Sept 2021 - Present}} & {} \hfill \small{\textbf{Sichuan University, Chengdu}}\\ 
     Sichuan University - Pittsburgh Institute & {} \hfill {}\\ 
-    Bachelor of Engineering - Mechanical Engineering & {} \hfill GPA: 3.84/4.00\\
+    BSE, Mechanical Engineering & {} \hfill GPA: 3.84/4.00\\
 
 \end{tabularx}
 
@@ -165,10 +167,10 @@
 \begin{tabularx}{\linewidth}{@{}l X@{}}
     \large \textbf{Series Spring Design \& Evaluation for \href{https://www.opensourceleg.org/about}{Open-Source Leg}} & \hfill July 2024 - Present \\
     \small{\textbf{Instructor: Prof. Elliott Rouse, Zachary Bons}} & \hfill {} \\
-    \small{\href{https://neurobionics.robotics.umich.edu/}{Neurobionics Lab}, Robotics, University of Michigan} & \hfill {} \\
+    \small{\href{https://neurobionics.robotics.umich.edu/}{Neurobionics Lab}, University of Michigan} & \hfill {} \\
+    \small{Publication: In Preparation \cite{SeriesSpring}} & \hfill {} \\
     % \small{\href{https://doi.org/10.1109/TMECH.2023.3334957}{Reference: Background Research}} & \hfill {} \\
     \end{tabularx}
-    
 
     \begin{itemize}[
         rightmargin=2cm
@@ -177,14 +179,16 @@
         \setlength{\parskip}{0pt}
         \setlength{\parsep}{0pt}
         \item {Generate a mechanical design of series spring with easier mounting strategies and better axial alignments}
-        \item {Evaluate the hysteresis effect on assembly interfaces (e.g. between cam shaft and spring flextures)}
-        \item {Evaluate the effect on broadening the design space from series spring design}
+        \item {Generate a design to measure the deflection angle of the series spring via Computer Vision}
+        \item {Evaluate the hysteresis effect on assembly interfaces through different designs and manufacturing methods}
+        \item {Evaluate the effect on broadening the design space from series springs}
     \end{itemize}
+
 
 \begin{tabularx}{\linewidth}{@{}l X@{}}
 \large \textbf{Software Library Generalization for \href{https://www.opensourceleg.org/about}{Open-Source Leg}} & \hfill Mar 2024 - Present \\
 \small{\textbf{Instructor: Prof. Elliott Rouse, Senthur Ayyappan}} & \hfill {} \\
-\small{\href{https://neurobionics.robotics.umich.edu/}{Neurobionics Lab}, Robotics, University of Michigan} & \hfill {} \\
+\small{\href{https://neurobionics.robotics.umich.edu/}{Neurobionics Lab}, University of Michigan} & \hfill {} \\
 \small{\href{https://github.com/neurobionics/opensourceleg}{GitHub Repository Posted}} & \hfill {} \\
 \end{tabularx}
 
@@ -194,7 +198,7 @@
     \setlength{\itemsep}{1pt}
     \setlength{\parskip}{0pt}
     \setlength{\parsep}{0pt}
-    \item{\small Literature review on structure of prosthetic legs and 3-Phase Brushless DC Motors}
+    \item{\small Conducting review of literature on structure of prosthetic legs and 3-Phase Brushless DC Motors}
     \item{\small Redesign the Python Library for compatibility with alternative hardware}
     \item{\small Add support to alternative actuator controllers to broaden hardware choices}
     \item{\small Evaluate actuator performance through test of Step Response and Time-Domain Specifications}
@@ -202,9 +206,10 @@
 
 \begin{tabularx}{\linewidth}{@{}l X@{}}
 \large \textbf{Development \& Motion Analysis of Robot Swimmer} & \hfill Dec 2023 - Aug 2024 \\
-\small{\textbf{Instructor: Prof. Alex K. Shorter}} & \hfill {} \\
+\small{\textbf{Instructor: Prof. K. Alex Shorter}} & \hfill {} \\
 \small{Mechanical Engineering, University of Michigan} & \hfill {} \\
 \small{\href{https://github.com/Robin0265/PathPlanning_Code}{GitHub Repository Posted}} & \hfill {} \\
+\small{Publication: Accepted for Conference Proceeding \cite{Swimmingbot}} & \hfill {} \\
 \end{tabularx}
 
 \begin{itemize}[
@@ -214,7 +219,7 @@
     \setlength{\parskip}{0pt}
     \setlength{\parsep}{0pt}
     % \item{\small Develop an E. coli-based robot swimmer model with a sphere head and quad flagella}
-    \item{\small Design \& optimize the E-coli based robot CAD model for smooth 2-D motion in uniform, viscous flow}
+    \item{\small Design \& optimize the E-coli based robot CAD model for 2-D motion in uniform, viscous flow}
     \item{\small Validate the mechanical design by CFD analysis}
     % \item{\small Use correlation analysis towards design parameters to optimize mechanical design}
     \item{\small Develop a path-planning algorithm for obstacle avoidance}
@@ -269,7 +274,7 @@
 
 \begin{tabularx}{\linewidth}{@{}l X@{}}
 \large \textbf{Instructional Aid (IA) of ME360 - System Dynamics} & \hfill {Aug 2024 - Present} \\
-\normalsize \textbf{Full Name: \href{https://me.engin.umich.edu/wp-content/uploads/2023/07/ME-360-Course-Profile.pdf}{\textit{Modeling, Analysis and Control of Dynamic Systems}}} & \hfill \small{} \\
+\normalsize \textbf{Full Name:} \href{https://me.engin.umich.edu/wp-content/uploads/2023/07/ME-360-Course-Profile.pdf}{Modeling, Analysis and Control of Dynamic Systems} & \hfill \small{} \\
 \small \textbf{Instructor: Prof. Uduak Inyang-Udoh} & \hfill \small{} \\
 \normalsize{Mechanical Engineering, University of Michigan} & \hfill \small{} \\
 \end{tabularx}
@@ -324,15 +329,16 @@
 %----------------------------------------------------------------------------------------
 %	PUBLICATIONS
 %----------------------------------------------------------------------------------------
+% \begin{tabularx}{\linewidth}{@{}l X@{}}
+%     \large \textbf{In Review} & \hfill {}\\
+% \end{tabularx}
 
-\section{Publications}
+% \begin{refsection}[inReview.bib]
+% \nocite{*}
+% \printbibliography[heading=none]
+% \end{refsection}
 
-\begin{tabularx}{\linewidth}{@{}l X@{}}
-    \large \textbf{In Review} & \hfill {}\\
-\end{tabularx}
+\printbibliography[heading=bibnumbered, title={Publications}]
 
-\begin{refsection}[inReview.bib]
-\nocite{*}
-\printbibliography[heading=none]
-\end{refsection}
+
 \end{document}
