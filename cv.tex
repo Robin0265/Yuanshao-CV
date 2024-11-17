@@ -61,7 +61,7 @@
 \RequirePackage{color}
 \RequirePackage{graphicx}
 \usepackage[usenames,dvipsnames]{xcolor}
-\usepackage[scale=0.89]{geometry}
+\usepackage[scale=0.90, top=2cm, bottom=2cm]{geometry}
 
 %tabularx environment
 \usepackage{tabularx}
@@ -100,6 +100,9 @@
 
 %for social icons
 \usepackage{fontawesome5}
+
+\usepackage{fancyhdr}
+
 % \usepackage{cite}
 
 %debug page outer frames
@@ -110,8 +113,13 @@
 %----------------------------------------------------------------------------------------
 \begin{document}
 % non-numbered pages
-\pagestyle{empty} 
+% \pagestyle{empty} 
 
+\pagestyle{fancy}
+%... then configure it.
+\fancyhead{} % clear all header fields
+\fancyhead[LO, RE]{\footnotesize {Resume - Yuanshao Yang - Robotics Ph.D.}}
+\fancyfoot{} % clear all footer fields
 %----------------------------------------------------------------------------------------
 %	TITLE
 %----------------------------------------------------------------------------------------
@@ -150,7 +158,7 @@
 
 \small
 {
-    Aug 2024, University of Michigan\hfill \textbf{College of Engineering Scholarship} (\$2,000)\\
+    Aug 2024, University of Michigan\hfill \textbf{CoE Need- and Merit-Based Scholarships} (\$2,000)\\
     June 2024 / Dec 2023, University of Michigan\hfill \textbf{College of Engineering - Dean's List}\\
     May 2024 / Dec 2023, University of Michigan\hfill \textbf{University Honors}\\
     Oct 2023, Sichuan University\hfill \textbf{Dean's List} (10 \% Annual Tuition, 30/230)\\
