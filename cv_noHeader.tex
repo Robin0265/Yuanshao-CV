@@ -1,0 +1,354 @@
+%	The MIT License (MIT)
+%
+%	Copyright (c) 2021 Jitin Nair
+%
+%	Permission is hereby granted, free of charge, to any person obtaining a copy
+%	of this software and associated documentation files (the "Software"), to deal
+%	in the Software without restriction, including without limitation the rights
+%	to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+%	copies of the Software, and to permit persons to whom the Software is
+%	furnished to do so, subject to the following conditions:
+%	
+%	THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+%	IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+%	FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+%	AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+%	LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+%	OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN
+%	THE SOFTWARE.
+%	
+%
+%-----------------------------------------------------------------------------------------------------------------------------------------------%
+
+%----------------------------------------------------------------------------------------
+%	DOCUMENT DEFINITION
+%----------------------------------------------------------------------------------------
+
+% article class because we want to fully customize the page and not use a cv template
+\documentclass[letter,12pt]{article}
+\usepackage[document]{ragged2e}
+\usepackage{moresize}
+\usepackage{blindtext}
+\usepackage{paralist}
+\usepackage{indentfirst}
+%----------------------------------------------------------------------------------------
+%	FONT
+%----------------------------------------------------------------------------------------
+
+% % fontspec allows you to use TTF/OTF fonts directly
+% \usepackage{fontspec}
+% \defaultfontfeatures{Ligatures=TeX}
+
+% % modified for ShareLaTeX use
+% \setmainfont[
+% SmallCapsFont = Fontin-SmallCaps.otf,
+% BoldFont = Fontin-Bold.otf,
+% ItalicFont = Fontin-Italic.otf
+% ]
+% {Fontin.otf}
+
+%----------------------------------------------------------------------------------------
+%	PACKAGES
+%----------------------------------------------------------------------------------------
+\usepackage{url}
+\usepackage{parskip}
+\usepackage{comment}
+
+\usepackage{markdown}
+\markdownSetup{pipeTables,tableCaptions}
+
+%other packages for formatting
+\RequirePackage{color}
+\RequirePackage{graphicx}
+\usepackage[usenames,dvipsnames]{xcolor}
+\usepackage[scale=0.90, top=2cm, bottom=2cm]{geometry}
+
+%tabularx environment
+\usepackage{tabularx}
+%for lists within experience section
+\usepackage{enumitem}
+
+% centered version of 'X' col. type
+\newcolumntype{C}{>{\centering\arraybackslash}X} 
+
+%to prevent spillover of tabular into next pages
+\usepackage{supertabular}
+\usepackage{tabularx}
+\newlength{\fullcollw}
+\setlength{\fullcollw}{0.47\textwidth}
+
+%custom \section
+\usepackage{titlesec}				
+\usepackage{multicol}
+\usepackage{multirow}
+
+%CV Sections inspired by: 
+%http://stefano.italians.nl/archives/26
+\titleformat{\section}{\Large\scshape\raggedright}{}{0em}{}[\titlerule]
+\titlespacing{\section}{0pt}{10pt}{10pt}
+
+%for publications
+\usepackage[style=numeric-verb, maxbibnames=99]{biblatex}
+\addbibresource{inReview.bib}
+\renewbibmacro{in:}{}
+
+%Setup hyperref package, and colours for links
+\usepackage[unicode, draft=false]{hyperref}
+\definecolor{linkcolour}{rgb}{0,0.2,0.6}
+\hypersetup{colorlinks,breaklinks,urlcolor=linkcolour,linkcolor=linkcolour}
+\setlength\bibitemsep{1em}
+
+%for social icons
+\usepackage{fontawesome5}
+
+\usepackage{fancyhdr}
+
+% \usepackage{cite}
+
+%debug page outer frames
+%\usepackage{showframe}
+
+%----------------------------------------------------------------------------------------
+%	BEGIN DOCUMENT
+%----------------------------------------------------------------------------------------
+\begin{document}
+% non-numbered pages
+% \pagestyle{empty} 
+
+% \pagestyle{fancy}
+% %... then configure it.
+% \fancyhead{} % clear all header fields
+% \fancyhead[LO, RE]{\footnotesize {Resume - Yuanshao Yang - Robotics Ph.D.}}
+% \fancyfoot{} % clear all footer fields
+%----------------------------------------------------------------------------------------
+%	TITLE
+%----------------------------------------------------------------------------------------
+
+% \begin{tabularx}{\linewidth}{ @{}X X@{} }
+% \huge{Your Name}\vspace{2pt} & \hfill \emoji{incoming-envelope} email@email.com \\
+% \raisebox{-0.05\height}\faGithub\ username \ | \
+% \raisebox{-0.00\height}\faLinkedin\ username \ | \ \raisebox{-0.05\height}\faGlobe \ mysite.com  & \hfill \emoji{calling} number
+% \end{tabularx}
+
+
+\begin{tabularx}{\linewidth}{@{} C @{}}
+\Huge{Yuanshao Yang} \\[7.5pt]
+\href{https://github.com/Robin0265}{\raisebox{-0.05\height}\faGithub\ Github} \ $|$ \ 
+\href{mailto:yuanshao@umich.edu}{\raisebox{-0.05\height}\faEnvelope \ yuanshao@umich.edu} \ $|$ \ 
+\href{tel:+17348828073}{\raisebox{-0.05\height}\faMobile \ +1 (734) 882-8073} \\
+% \href{https://www.linkedin.com/in/yuanshao-yang-1618a2288/}{\raisebox{-0.05\height}\faLinkedin \ LinkedIn} \\
+\end{tabularx}
+\center{2302 Somerset CT., Unit 209, Ann Arbor, MI 48105}
+
+\section{Education}
+\begin{tabularx}{\linewidth}{@{}l X@{}}	
+
+    \textit{\textbf{Aug 2023 - Present}} & {} \hfill {\small{\textbf{University of Michigan - Ann Arbor}}}\\
+    College of Engineering \\
+    BSE, Mechanical Engineering (Concentration in Robotics) & \hfill GPA: 4.00/4.00\\
+
+    \textit{\textbf{Sept 2021 - Present}} & {} \hfill \small{\textbf{Sichuan University, Chengdu}}\\ 
+    Sichuan University - Pittsburgh Institute & {} \hfill {}\\ 
+    BSE, Mechanical Engineering & {} \hfill GPA: 3.84/4.00\\
+
+\end{tabularx}
+
+
+
+\section{Honors \& Awards}
+
+\small
+{
+    Aug 2024, University of Michigan\hfill \textbf{CoE Need and Merit-Based Scholarships} (\$2,000)\\
+    June 2024 / Dec 2023, University of Michigan\hfill \textbf{College of Engineering - Dean's List}\\
+    May 2024 / Dec 2023, University of Michigan\hfill \textbf{University Honors}\\
+    Oct 2023, Sichuan University\hfill \textbf{Dean's List} (10 \% Annual Tuition, 30/230)\\
+    Oct 2022, Sichuan University\hfill \textbf{Academic Star Scholarship} (20 \% Annual Tuition, 3/230)\\
+    Oct 2022, Sichuan University\hfill \textbf{Comprehensive Academic Scholarship, 2nd Prize} (TOP 4 \%)\\
+    Oct 2022, Sichuan University\hfill \textbf{Outstanding Student Leader of the Year}\\
+}
+
+
+
+%Projects
+\section{Projects}
+
+\begin{tabularx}{\linewidth}{@{}l X@{}}
+    \large \textbf{Series Spring Design \& Evaluation for \href{https://www.opensourceleg.org/about}{Open-Source Leg}} & \hfill July 2024 - Present \\
+    \small{\textbf{Instructor: Prof. Elliott Rouse, Zachary Bons}} & \hfill {} \\
+    \small{\href{https://neurobionics.robotics.umich.edu/}{Neurobionics Lab}, University of Michigan} & \hfill {} \\
+    \small{\href{https://github.com/Robin0265/OSL_Spring_TestBed}{GitHub Repository Posted}} & \hfill {} \\
+    \small{Publication: In \textbf{Preparation}} & \hfill {} \\
+    % \small{\href{https://doi.org/10.1109/TMECH.2023.3334957}{Reference: Background Research}} & \hfill {} \\
+    \end{tabularx}
+
+    \begin{itemize}[
+        rightmargin=2cm
+    ]
+        \setlength{\itemsep}{1pt}
+        \setlength{\parskip}{0pt}
+        \setlength{\parsep}{0pt}
+        \item {Generate a mechanical design of series spring with easier mounting strategies and better axial alignments}
+        \item {Generate a design to measure the deflection angle of the series spring via Computer Vision}
+        \item {Evaluate the hysteresis effect on assembly interfaces through different designs and manufacturing methods}
+        \item {Evaluate the effect on broadening the design space from series springs}
+    \end{itemize}
+
+
+\begin{tabularx}{\linewidth}{@{}l X@{}}
+\large \textbf{Software Library Generalization for \href{https://www.opensourceleg.org/about}{Open-Source Leg}} & \hfill Mar 2024 - Present \\
+\small{\textbf{Instructor: Prof. Elliott Rouse, Senthur Ayyappan}} & \hfill {} \\
+\small{\href{https://neurobionics.robotics.umich.edu/}{Neurobionics Lab}, University of Michigan} & \hfill {} \\
+\small{\href{https://github.com/neurobionics/opensourceleg}{GitHub Repository Posted}} & \hfill {} \\
+\end{tabularx}
+
+\begin{itemize}[
+    rightmargin=2cm
+]
+    \setlength{\itemsep}{1pt}
+    \setlength{\parskip}{0pt}
+    \setlength{\parsep}{0pt}
+    \item{\small Conducting review of literature on structure of prosthetic legs and 3-Phase Brushless DC Motors}
+    \item{\small Redesign the Python Library for compatibility with alternative hardware}
+    \item{\small Add support to alternative actuator controllers to broaden hardware choices}
+    \item{\small Evaluate actuator performance through test of Step Response and Time-Domain Specifications}
+\end{itemize}
+
+\begin{tabularx}{\linewidth}{@{}l X@{}}
+\large \textbf{Development \& Motion Analysis of Robot Swimmer} & \hfill Dec 2023 - Aug 2024 \\
+\small{\textbf{Instructor: Prof. K. Alex Shorter}} & \hfill {} \\
+\small{Mechanical Engineering, University of Michigan} & \hfill {} \\
+\small{\href{https://github.com/Robin0265/PathPlanning_Code}{GitHub Repository Posted}} & \hfill {} \\
+\small{Publication: \textbf{Accepted} for Conference Proceeding \cite{Swimmingbot}} & \hfill {} \\
+\end{tabularx}
+
+\begin{itemize}[
+    rightmargin=2cm
+]
+    \setlength{\itemsep}{1pt}
+    \setlength{\parskip}{0pt}
+    \setlength{\parsep}{0pt}
+    % \item{\small Develop an E. coli-based robot swimmer model with a sphere head and quad flagella}
+    \item{\small Design \& optimize the E-coli based robot CAD model for 2-D motion in uniform, viscous flow}
+    \item{\small Validate the mechanical design by CFD analysis}
+    % \item{\small Use correlation analysis towards design parameters to optimize mechanical design}
+    \item{\small Develop a path-planning algorithm for obstacle avoidance}
+    \item{\small Design the feedback control model to perform reference tracking}
+    
+\end{itemize}
+
+% \begin{tabularx}{\linewidth}{@{}l X@{}}
+% \large \textbf{An Automated Vehicle with Tracking System} & \hfill Mar 2023 - Aug 2023 \\
+% \small \textbf{Instructor: Prof. Qi Lu} & \hfill {} \\
+% \small{{Sichuan University - Pittsburgh Institute}} & \hfill {} \\
+% \small{\href{https://github.com/Robin0265/StablerCTRL}{GitHub Repository Posted}} & \hfill {} \\
+% \end{tabularx}
+
+% \begin{itemize}[
+%     rightmargin=2cm
+% ]
+%     \setlength{\itemsep}{1pt}
+%     \setlength{\parskip}{0pt}
+%     \setlength{\parsep}{0pt}
+%     \item{\small Development of a self-tracking vehicle with tennis-ball-recognition}
+%     \item{\small Focusing on image recognition algorithm and object tracking method in the Tracking System}
+%     \item{\small Training and testing the image recognition model (YOLO v3) on the camera module for better effects of tennis ball recognition}
+%     \item{\small Implementation of PID controller for servos in the stabilizer to achieve object tracking}
+%     \item{\small Implementing and testing the functionality of the tracking system}
+% \end{itemize}
+
+% \begin{tabularx}{\linewidth}{@{}l X@{}}
+% \large \textbf{Clinical Data Analysis of Heart Disease} & \hfill {Mar 2022 - June 2023} \\
+
+% \textbf{Instructor: Prof. Xiaobo Zhou, Yuefu Zhan} & \hfill {}\\
+
+% \small{\href{https://www.wchscu.cn/dsj/index.html}{Biomedical Big Data Center, West China Hospital}, Sichuan University} & \hfill {} \\
+% \small{\href{https://github.com/Robin0265/HeartDisease_Regression}{GitHub Repository Posted}} & \hfill {} \\
+% \end{tabularx}
+
+% \begin{itemize}[
+%     rightmargin=2cm
+% ]
+%     \setlength{\itemsep}{1pt}
+%     \setlength{\parskip}{0pt}
+%     \setlength{\parsep}{0pt}
+%     \item{\small Work on diagnostic data of cardiac patients through feature selection}
+%     \item{\small Develop regression models (e.g., Random Forest) via Scikit-Learn and PyTorch in Python and use training data sets of clinical diagnostic data}
+%     \item{\small Test model performance on internal datasets}
+%     \item{\small Perform interpretability analysis of built models using variable sensitivity analysis}
+%     \item{\small Enhance classification processes' precision of the model by analyzing visualized Decision Trees}
+% \end{itemize}
+
+
+\section{Work Experience}
+
+\begin{tabularx}{\linewidth}{@{}l X@{}}
+\large \textbf{Instructional Aid (IA) of ME360 - System Dynamics} & \hfill {Aug 2024 - Present} \\
+\normalsize \textbf{Full Name:} \href{https://me.engin.umich.edu/wp-content/uploads/2023/07/ME-360-Course-Profile.pdf}{Modeling, Analysis and Control of Dynamic Systems} & \hfill \small{} \\
+\small \textbf{Instructor: Prof. Uduak Inyang-Udoh} & \hfill \small{} \\
+\normalsize{Mechanical Engineering, University of Michigan} & \hfill \small{} \\
+\end{tabularx}
+
+\begin{itemize}[
+    rightmargin=2cm
+]
+    \setlength{\itemsep}{1pt}
+    \setlength{\parskip}{0pt}
+    \setlength{\parsep}{0pt}
+    \item{\small Hold office hours and answer questions in-person / remote}
+    \item{\small Take trial exams and offer suggestions on exam question set-ups}
+    \item{\small Assist Graduate Student Instructor (GSI) with homework solutions}
+
+\end{itemize}
+        
+
+% \section{Extra-Curriculum Activities}
+
+% \begin{tabularx}{\linewidth}{@{}l X@{}}
+% \large \textbf{M.S.D.M (Math, Science, Data, and Modelling) Club} & \hfill {June 2022 - Present} \\
+% \normalsize{Co-Founder} & \hfill \small{Sichuan University} \\
+% \end{tabularx}
+
+% \begin{itemize}[
+%     rightmargin=2cm
+% ]
+%     \setlength{\itemsep}{1pt}
+%     \setlength{\parskip}{0pt}
+%     \setlength{\parsep}{0pt}
+%     \item{\small Establish an academic club aiming to integrate and share math-related resources}
+%     \item{\small Organize online seminars twice a month, attracted 10 people}
+%     \item{\small Invite professors to give pre-competition guidance to students planning to compete in MCM/ICM}
+%     \item{\small Manage member recruiting, seminar content planning}
+% \end{itemize}
+
+\section{Skills}
+
+    \begin{itemize}
+        \setlength{\itemsep}{1pt}
+        \setlength{\parskip}{0pt}
+        \setlength{\parsep}{0pt}
+        \item \textbf{General Programming:} C/C++, Python
+        \item \textbf{General Computation \& Simulation Tools:} MATLAB \& Simulink Toolbox, MSC Adams
+        \item \textbf{Data Science \& Machine Learning Toolbox:} Scikit-Learn, PyTorch
+        \item \textbf{Computer Vision:} OpenCV
+        \item \textbf{Mechanical Design:} SolidWorks, AutoCAD
+        \item \textbf{Embedded System Design:} Keil MDK
+        \item \textbf{Writing \& Formatting:} LaTeX
+    \end{itemize}
+    
+%----------------------------------------------------------------------------------------
+%	PUBLICATIONS
+%----------------------------------------------------------------------------------------
+% \begin{tabularx}{\linewidth}{@{}l X@{}}
+%     \large \textbf{In Review} & \hfill {}\\
+% \end{tabularx}
+
+% \begin{refsection}[inReview.bib]
+% \nocite{*}
+% \printbibliography[heading=none]
+% \end{refsection}
+
+\printbibliography[heading=bibnumbered, title={Publications}]
+
+
+\end{document}
